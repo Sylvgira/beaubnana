@@ -1,0 +1,9 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Catalogue from '../components/Catalogue.astro';
+import { getShopData } from '../lib/shopify';
+const { products } = await getShopData();
+---
+<SiteLayout title="Products | Beaubnana" page="catalogue">
+  <Catalogue products={products} />
+</SiteLayout>

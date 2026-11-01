@@ -1,23 +1,9 @@
-# Keep only system files and dependencies in gitignore
-# This allows development files to be committed to the repository
-
-# Node modules and dependencies
 node_modules/
-# package-lock.json
-
-# System files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-.cursor/rules/scope.mdc
-
-# Environment variables
-.env
-
-# Build artifacts
 dist/
-build/
-.cache/
-
-/dist/
+.astro/
+.env
+.env.*
+!.env.example
+.DS_Store
+playwright-report/
+test-results/

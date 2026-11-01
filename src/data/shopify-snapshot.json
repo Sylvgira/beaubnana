@@ -1,0 +1,3909 @@
+{
+  "capturedAt": "2026-11-01T06:22:33.843Z",
+  "products": [
+    {
+      "id": "gid://shopify/Product/7405670301783",
+      "title": "Unbreakable Vase Earrings - Pop",
+      "description": "A playful blend of polka-dot ceramic beads and linen thread creates an unbreakable vase with a youthful charm. The colour-block design and unique 3D crochet texture add an artistic touch, showcasing meticulous craftsmanship.",
+      "handle": "unbreakable-vase-earrings-pop",
+      "tags": [
+        "Unbreakable Vase"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960928855\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800-800_64782ecf-9609-4855-a783-c92bf00a4185.png?v=1745718534",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f36157a3cb20b4964c89__E4_BA_A7_E5_93_81-17191.webp?v=1745718534",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f361d2ddc8bffe62df82__E4_BA_A7_E5_93_81-17194.webp?v=1745718534",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f3614a28a6de28e1fa5e__E4_BA_A7_E5_93_81-17213.webp?v=1745718534",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": [
+          {
+            "node": {
+              "handle": "frontpage"
+            }
+          }
+        ]
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957626455",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670334551",
+      "title": "Unbreakable Vase Earrings - Brown",
+      "description": "A playful blend of polka-dot ceramic beads and linen thread creates an unbreakable vase with a youthful charm. The colour-block design and unique 3D crochet texture add an artistic touch, showcasing meticulous craftsmanship.",
+      "handle": "unbreakable-vase-earrings",
+      "tags": [
+        "Unbreakable Vase"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960699479\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800-800_861039d4-10aa-4657-b4c8-9abb32a39da3.png?v=1745718538",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957659223",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670367319",
+      "title": "I Love Beer Bag",
+      "description": "The joy of summer is all about ice-cold beer! With vibrant contrasting colors, a frosty beer design, a calm smile, and playful pop dancing butterflies, this bag captures the lively spirit of summer. Just remember, enjoy in moderation! The bag features a mix of vivid memories of good times, with unique patterns on each side, bold colors combinations, and a stretchy, open-knit strap that’s both soft and durable. Perfect for adding a cheerful touch to your summer!",
+      "handle": "i-love-beer-bag",
+      "tags": [
+        "I Love Beer"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960633943\",\"gid://shopify/Metaobject/138960601175\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960830551\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "75.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800X800-_1.png?v=1745718553",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/13143.jpg?v=1745718553",
+              "width": 3755,
+              "height": 5632,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/13130.jpg?v=1745718553",
+              "width": 5642,
+              "height": 3761,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/13162.jpg?v=1745718553",
+              "width": 3318,
+              "height": 4976,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/13179.jpg?v=1745718553",
+              "width": 3755,
+              "height": 5632,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/13168.jpg?v=1745718553",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957691991",
+              "price": {
+                "amount": "75.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670432855",
+      "title": "Radioactivity Bag - Blue",
+      "description": "A radiating pattern knitted with wool in various textures and colours. This double-sided bag features black dots that expand in a gradient pattern on one side, and white dots on the other. Each side is accented with playful wool pom-poms, and the strap is crafted with deep blue cotton yarn for added charm. The details make this wool-knit tote a piece you’ll fall in love with.",
+      "handle": "radioactivity-bag-blu",
+      "tags": [
+        "Radioactivity",
+        "Top Seller"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "55.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e936d653b84f6b62868d_6725a67d31cca17ddb07ea7b__25E4_25BA_25A7_25E5_2593_2581800X800_25202_25201.webp?v=1745718563",
+              "width": 800,
+              "height": 801,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8001.jpg?v=1745718563",
+              "width": 528,
+              "height": 528,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8002.jpg?v=1745718563",
+              "width": 532,
+              "height": 532,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8003_a709638d-be14-423c-8570-c1a5cbda22f8.jpg?v=1745718563",
+              "width": 534,
+              "height": 534,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8004_1ab4cc7d-b45a-4ec0-be09-49f73af4098e.jpg?v=1745718563",
+              "width": 532,
+              "height": 531,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8005_a342f002-4c01-4fd6-9594-38c2aa1c3425.jpg?v=1745718563",
+              "width": 530,
+              "height": 529,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957757527",
+              "price": {
+                "amount": "55.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670465623",
+      "title": "Radioactivity Bag - Green",
+      "description": "A radiating pattern knitted with wool in various textures and colours. This double-sided bag features black dots that expand in a gradient pattern on one side, and white dots on the other. Each side is accented with playful wool pom-poms, and the strap is crafted with deep blue cotton yarn for added charm. The details make this wool-knit tote a piece you’ll fall in love with.",
+      "handle": "radioactivity-bag-grn",
+      "tags": [
+        "Radioactivity",
+        "Top Seller"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960633943\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "55.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e936d653b84f6b628690_6725a482db0395d126b11a50__25E4_25BA_25A7_25E5_2593_2581800X800_25202.webp?v=1745718572",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8003.jpg?v=1745718572",
+              "width": 534,
+              "height": 534,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8004.jpg?v=1745718572",
+              "width": 526,
+              "height": 527,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8005.jpg?v=1745718572",
+              "width": 532,
+              "height": 532,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800x8006.jpg?v=1745718572",
+              "width": 528,
+              "height": 528,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957823063",
+              "price": {
+                "amount": "55.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670498391",
+      "title": "Smiley Face Earrings - Yellow",
+      "description": "I’ve fallen in love with this sunlit smiley face. On every rough day, it seems to remind you, “Everything will be okay.” Crafted with colourful cotton yarn and ceramic seed beads, this cheerful little smiley brings a boost of good vibes.",
+      "handle": "smiley-face-earrings-ylw",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960601175\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960568407\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "25.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672711f6c169f205aa22e1e2__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_E9_BB_84_E8_89_B2.webp?v=1745718579",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727134738d6c49c23c1b6fb_2.webp?v=1745718579",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271347260b2268f86ab919_1.webp?v=1745718579",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957855831",
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670531159",
+      "title": "Smiley Face Earrings - Green",
+      "description": "I’ve fallen in love with this sunlit smiley face. On every rough day, it seems to remind you, “Everything will be okay.” Crafted with colourful cotton yarn and ceramic seed beads, this cheerful little smiley brings a boost of good vibes.",
+      "handle": "smiley-face-earrings-grn",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960568407\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "25.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271208ab78afdf10168fb5__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_E7_BB_BF_E8_89_B2.webp?v=1745718586",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672b2e8d0ce2a310ddf11949_3.jpg?v=1745718586",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672b2e8d21d98dcfc6e032c1_4.jpg?v=1745718587",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957888599",
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670563927",
+      "title": "Smiley Face Earrings - Pink",
+      "description": "I’ve fallen in love with this sunlit smiley face. On every rough day, it seems to remind you, “Everything will be okay.” Crafted with colourful cotton yarn and ceramic seed beads, this cheerful little smiley brings a boost of good vibes.",
+      "handle": "smiley-face-earrings-pnk",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960568407\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "25.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271361ab78afdf101705b0__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE-_E7_BA_A2_E8_89_B2.webp?v=1745718592",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672b2edf8a5c3c9d66c4bd80_6.jpg?v=1745718592",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957921367",
+              "price": {
+                "amount": "25.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670596695",
+      "title": "Unbreakable Vase Necklace - Brown",
+      "description": "Soft and delicate, yet unbreakable. This brown crochet vase necklace is versatile and allows you to place small flowers inside, adding a practical and personal touch.",
+      "handle": "unbreakable-vase-necklace-brn",
+      "tags": [
+        "Unbreakable Vase"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960699479\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "45.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672720414267f23051ffd538__E4_BA_A7_E5_93_81800-800-_E9_80_8F_E6_98_8E_E5_BA_95_20_E6_8B_B7_E8_B4_9D.webp?v=1745718594",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957954135",
+              "price": {
+                "amount": "45.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670629463",
+      "title": "Unbreakable Vase Necklace - Pop",
+      "description": "Soft and delicate, yet unbreakable. This brown crochet vase necklace is versatile and allows you to place small flowers inside, adding a practical and personal touch.",
+      "handle": "unbreakable-vase-necklace-pop",
+      "tags": [
+        "Unbreakable Vase"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960928855\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "48.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672720d5dedb71049a0180bc__E4_BA_A7_E5_93_81800-800-_E9_80_8F_E6_98_8E_E5_BA_95_20_E6_8B_B7_E8_B4_9D.webp?v=1745718608",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672b256a676c1f9d59c1ee68__E4_BA_A7_E5_93_81-17221.jpg?v=1745718608",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672b25691ba414606cf052c8__E4_BA_A7_E5_93_81-17225.jpg?v=1745718608",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672b256a79d983473e6a5f9e__E4_BA_A7_E5_93_81-17230.jpg?v=1745718608",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672b256ad068a6f9b227a0df__E4_BA_A7_E5_93_81-17233.jpg?v=1745718608",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672943cb1ef640c2aecd9a6f__E4_BA_A7_E5_93_81-17237.jpg?v=1745718608",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684957986903",
+              "price": {
+                "amount": "48.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670662231",
+      "title": "Lazy Dachshunds Earrings",
+      "description": "I’ll express my love freely and wholeheartedly—I absolutely adore dachshunds.",
+      "handle": "lazy-dachshunds-earrings",
+      "tags": [
+        "Lazy Animals"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960699479\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727192f7cab3af512c62484__E4_BA_A7_E5_93_81800-800-_E7_99_BD_E5_BA_95_E5_9B_BE_E8_80_B3_E9_92_A9_E6_AC_BE_201.webp?v=1745718624",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727199fad182a3247f4aa55__E8_BE_A3_E5_A6_B9_E7_B3_BB_E5_88_97_2072.jpg?v=1745718624",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727199fb98345c0c4bdd574__E8_BE_A3_E5_A6_B9_E7_B3_BB_E5_88_97_2073.jpg?v=1745718624",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727199f041cd99015a906c5__E8_BE_A3_E5_A6_B9_E7_B3_BB_E5_88_97_2076.jpg?v=1745718624",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727199fa360899135e71575__E8_BE_A3_E5_A6_B9_E7_B3_BB_E5_88_97_2078.jpg?v=1745718624",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727199f83e251cacd87f8d9__E8_BE_A3_E5_A6_B9_E7_B3_BB_E5_88_97_2088.jpg?v=1745718624",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727199fdc6305cc1d055ff2__E8_BE_A3_E5_A6_B9_E7_B3_BB_E5_88_97_2090.jpg?v=1745718624",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958019671",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670694999",
+      "title": "Coffee Bean Earrings",
+      "description": "A cup of coffee, happiness takes off. Energising, refreshing, and full of delightful aromas, this coffee-themed collection doubles the joy with each order. Handmade double-sided 3D crochet coffee beans, packed with details—caffeine awakens my happiness.",
+      "handle": "coffee-bean-earrings",
+      "tags": [
+        "Coffee Break"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960666711\",\"gid://shopify/Metaobject/138960699479\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672716ec1a5a16882684e9da__E4_BA_A7_E5_93_81800-800-_E9_80_8F_E6_98_8E_E5_9B_BE.webp?v=1745718638",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271721d8bc9bb5389a8977__E4_BA_A7_E5_93_81-29382.jpg?v=1745718638",
+              "width": 1920,
+              "height": 2879,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271721f947d566edbcf8ac__E4_BA_A7_E5_93_81-29399.jpg?v=1745718638",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271721ad182a3247f3c4dc__E4_BA_A7_E5_93_81-29403.jpg?v=1745718638",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271721ab78afdf1018aaed__E4_BA_A7_E5_93_81-29411.jpg?v=1745718638",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271721aca8c9d370f1e1c4__E4_BA_A7_E5_93_81-29421.jpg?v=1745718638",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672717216ebda18a3ed03959__E4_BA_A7_E5_93_81-29446.jpg?v=1745718638",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958052439",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670727767",
+      "title": "Too Hot Blossom Earrings",
+      "description": "A cherry blossom shape crocheted with pink cotton yarn, accented by a green centre and yellow beads, giving it a full dose of soothing pink charm.",
+      "handle": "too-hot-blossom-earrings",
+      "tags": [
+        "Too Hot"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960732247\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270b647e4a315fe2e589c2__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_204.webp?v=1745718648",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270c5a6ebda18a3ecc6f67_1.jpg?v=1745718648",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270c5b1d64c7d0aa967e24_2.jpg?v=1745718648",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270c5a1a5a1688268133d7_3.jpg?v=1745718648",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270c5b824130b80eb39114_8.jpg?v=1745718648",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958085207",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670760535",
+      "title": "Radioactive Globe Earrings",
+      "description": "In response to global warming, we aim to raise awareness through our wool creations, hoping more people see the beauty and charm of our Earth that needs our protection! Made from eco-friendly materials—pure cotton yarn and Arctic velvet yarn (52% acrylic, 28% nylon, 20% polyester)—all sustainably dyed. Crafted with both crochet and hand-weaving techniques.",
+      "handle": "radioactive-globe-earrings",
+      "tags": [
+        "Radioactivity"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960830551\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270571a360899135df5b7b__E9_80_8F_E6_98_8E_E5_9B_BE.webp?v=1745718657",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270616f881d1a5e6e53a25_1.jpg?v=1745718657",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270616d8bc9bb53893839a_2.jpg?v=1745718657",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270616dbd8307fac8b262a_3.jpg?v=1745718657",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727061612589c89e21bdc8d_5.jpg?v=1745718657",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672705835c774a0b63afd513__E6_97_A0logo.jpg?v=1745718657",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958117975",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670793303",
+      "title": "Pink Vapour Earrings",
+      "description": "Pink fluffy round earrings. Perfect for flattering the face—an ideal choice for vacations.",
+      "handle": "pink-vapour-earrings",
+      "tags": [
+        "Too Hot"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960896087\",\"gid://shopify/Metaobject/138960568407\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f81c83e251cacd781dda_750X1000_206_201.webp?v=1745718664",
+              "width": 751,
+              "height": 751,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f876041cd9901595472b__E4_BA_A7_E5_93_81-28234.jpg?v=1745718664",
+              "width": 1920,
+              "height": 2881,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f876f881d1a5e6d411d7__E4_BA_A7_E5_93_81-28242.jpg?v=1745718664",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f87682aa37fea63a4c35__E4_BA_A7_E5_93_81-28270.jpg?v=1745718664",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958150743",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670858839",
+      "title": "Twistable Globe Earrings",
+      "description": "A flexible Earth earring series that can be styled freely. Made from pure cotton yarn and Arctic velvet yarn (52% acrylic, 28% nylon, 20% polyester), all eco-friendly materials and sustainably dyed. Crafted with both crochet and hand-weaving techniques.",
+      "handle": "twistable-globe-earrings",
+      "tags": [
+        "Radioactivity"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960830551\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "35.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270691274eb0e5c24bdaa5__E4_BA_A7_E5_93_81800X800_280aa985-1a9a-45a4-882e-218c98dfd387.webp?v=1745718674",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672708288c4911607f061f0f_2.800X800_201.jpg?v=1745718674",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727082851b60d8f624d9956_2.800X800_202.jpg?v=1745718674",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672708280696de61ad5b248f_2.800X800_205.jpg?v=1745718674",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270828b98345c0c4b793aa_2.800X800_206.jpg?v=1745718674",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270828ad182a3247ee1a18_2.800X800_208.jpg?v=1745718674",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958216279",
+              "price": {
+                "amount": "35.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670891607",
+      "title": "Blossoming Flower Earrings",
+      "description": "Purple flower earrings. Made with eco-dyed cotton yarn, free from any additives.",
+      "handle": "blossoming-flower-earrings",
+      "tags": [
+        "Too Hot"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960601175\",\"gid://shopify/Metaobject/138960633943\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727046ad8bc9bb53892f378__E4_BA_A7_E5_93_81800X800_20PNG.webp?v=1745718683",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727053ba219f17588cf9c65_2.800X800_202.jpg?v=1745718683",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727053b48fb38004b6ae451_2.800X800_203.jpg?v=1745718683",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727053b4a28a6de28f25002_2.800X800_204.jpg?v=1745718683",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727053ba40cda057251bd56_2.800X800_205.jpg?v=1745718683",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958249047",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670924375",
+      "title": "I Love Beer Earrings",
+      "description": "Turning joyful drinking memories into imagery. Day and night become vibrant and colourful with a drink in hand. Passing on happiness through yarn for you to enjoy! Lightweight crochet beer with a stainless steel rotating link, perfect for all seasons.",
+      "handle": "i-love-beer-earrings",
+      "tags": [
+        "I Love Beer"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960863319\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727106fb98345c0c4ba8fd5_EH202368_201.webp?v=1745718691",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727110f7e444cea8c363bf7_1.jpg?v=1745718691",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727110f0696de61ad5e0864_2.jpg?v=1745718691",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727110f51b60d8f625097e1_3.jpg?v=1745718692",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727110f7a3579a35aa88d76_5.jpg?v=1745718692",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958281815",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405670989911",
+      "title": "Super Sweet Heart Earrings",
+      "description": "Retro colours combine matte red beads, blue cotton yarn, and silver glass yarn with polka dot art, offering a unique styling experience. This ultra-sweet accessory is a playful touch for the classic American girl. Timeless heart elements are filled with silver glass yarn, bordered with blue cotton yarn and red beads.",
+      "handle": "super-sweet-heart-earrings",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960896087\",\"gid://shopify/Metaobject/138960863319\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672709e4ae56b39e2499d4a8__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_E8_80_B3_E7_8E_AF_203.webp?v=1745718703",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270ae412589c89e21dd23e_1.jpg?v=1745718703",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270ae4dbd8307fac8cb47a_3.jpg?v=1745718703",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270ae457a3cb20b4aad859_4.jpg?v=1745718703",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270ae4260b2268f867f5b0_9.jpg?v=1745718703",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270ae40696de61ad5bf6c2_10.jpg?v=1745718703",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958380119",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671022679",
+      "title": "Balloon Flower Earrings",
+      "description": "Original balloon flower earrings, filled with cotton. The cotton yarn is eco-dyed with no additives, ensuring an environmentally friendly touch.",
+      "handle": "balloon-flower-earrings",
+      "tags": [
+        "Too Hot"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960535639\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270194da54fc946dfa51d8__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE.webp?v=1745718714",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672702c2363df89b80ca6709_1.jpg?v=1745718714",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672702c2466a6a373e1a441b_3.jpg?v=1745718714",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672702c2dc6305cc1dfccefc_4.jpg?v=1745718714",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672702c2e24754f69d09bdbb_7.jpg?v=1745718714",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672702c27cab3af512bda0d4_8.jpg?v=1745718714",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958445655",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671055447",
+      "title": "Balloon Dog Earrings",
+      "description": "Original balloon dog design. The earrings are filled with cotton, and the cotton yarn is eco-dyed with no additives.",
+      "handle": "balloon-dog-earrings",
+      "tags": [
+        "Too Hot"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727000bc169f205aa1c552c__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_201.webp?v=1745718727",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800X800_1.jpg?v=1745718727",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800X800_2.jpg?v=1745718727",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800X800_3.jpg?v=1745718727",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800X800_4.jpg?v=1745718727",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800X800_5.jpg?v=1745718727",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800X800_7.jpg?v=1745718727",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958478423",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671088215",
+      "title": "Loving Smiley Face Hairband",
+      "description": "I’ve fallen in love with this bright, sunny smiley face. On every bad day, it seems to remind you, “Everything will be okay.” Made with colourful cotton and single-sided velvet yarn in an airy crochet design, this vibrant headband is perfect for summer. It features a mix of seven different colour-blocked patterns, including classic granny squares, pixelated hearts, smiley faces, and pixelated cow prints.",
+      "handle": "loving-smiley-face-hairband",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960797783\",\"gid://shopify/Metaobject/138960732247\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "45.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271a7e1a5a168826860a78__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_206.webp?v=1745718737",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271be21d64c7d0aa9c39f4_1.jpg?v=1745718737",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271be2ab78afdf101a8729_2.jpg?v=1745718737",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271be2dbd8307fac92f42c_3.jpg?v=1745718737",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271be24267f23051fde1d0_4.jpg?v=1745718737",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958511191",
+              "price": {
+                "amount": "45.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671186519",
+      "title": "Milk Cow Hairband",
+      "description": "Cows on the pasture bask in their own sunshine, relaxed and carefree. This headband is crafted from six different patterned blocks in an open-knit crochet style, featuring pixelated hearts, cow prints, and little cow heads. The colours are soft and irresistibly cute.",
+      "handle": "milk-cow-hairband",
+      "tags": [
+        "Lazy Animals"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960601175\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "50.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271c5a041cd99015aa234c__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_207.webp?v=1745718751",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271d8da74f2475a7bdac93_1.jpg?v=1745718751",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271d8d4267f23051fea2c4_2.jpg?v=1745718751",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271d8d7e4a315fe2ec96eb_3.jpg?v=1745718751",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271d8d363df89b80d46da7_4.jpg?v=1745718751",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271d8d0696de61ad62c5a7_5.jpg?v=1745718751",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271d8d38d6c49c23c64018_7.jpg?v=1745718751",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958707799",
+              "price": {
+                "amount": "50.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671219287",
+      "title": "Shy Alien Earrings",
+      "description": "Shy alien design. We bring innovative DNA to handcrafted crochet, blending traditional craftsmanship with modern trends. Made with eco-friendly dyes, free from any additives.",
+      "handle": "shy-alien-earrings",
+      "tags": [
+        "Radioactivity"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960535639\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "35.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fa08ad182a3247df0556__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_202.webp?v=1745718764",
+              "width": 800,
+              "height": 801,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/1_198f337e-c74c-4bef-a072-fe8a9bdddc7a.jpg?v=1745718764",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/2_c8bdc0da-6743-4564-af6b-2baeed9cdea8.jpg?v=1745718764",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/3_8156490d-55de-4d51-b5e2-d5b84708263e.jpg?v=1745718764",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/4_fb675057-6324-4bf8-9dd1-843df6dfd330.jpg?v=1745718764",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/5_8dd69b20-7251-467d-817e-b893f2a37340.jpg?v=1745718764",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6_2920ea56-330b-440c-98e4-632162c104db.jpg?v=1745718764",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958740567",
+              "price": {
+                "amount": "35.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671252055",
+      "title": "Sweet Heart Earrings",
+      "description": "Retro colours blend matte red beads, blue cotton yarn, and silver glass yarn with polka dot art, offering a unique styling experience. This ultra-sweet accessory is a playful addition for the classic American girl. The timeless heart shape is filled with silver glass yarn, bordered with blue cotton yarn and red beads.",
+      "handle": "sweet-heart-earrings",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960863319\",\"gid://shopify/Metaobject/138960896087\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "20.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672708b0f881d1a5e6e62784__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_E8_80_B3_E7_8E_AF.webp?v=1745718776",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727097b3fb6aa509a9c9217_1.jpg?v=1745718776",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727097b51b60d8f624e0bab_4.jpg?v=1745718776",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727097bdc6305cc1dff0301_6.jpg?v=1745718776",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727097b83e251cacd823f84_7.jpg?v=1745718776",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727097a5452fe7827556bc2_8.jpg?v=1745718776",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958773335",
+              "price": {
+                "amount": "20.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671284823",
+      "title": "Pop Butterfly Earrings",
+      "description": "A joyful butterfly dancing gracefully, featuring vibrant colours and accented with polka-dot beads.",
+      "handle": "pop-butterfly-earrings",
+      "tags": [
+        "I Love Beer"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960601175\",\"gid://shopify/Metaobject/138960568407\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270f20c169f205aa21c289_EH202367_201.webp?v=1745718785",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672710035452fe782757828d_2.jpg?v=1745718785",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672710026ebda18a3ecdbe64_3.jpg?v=1745718785",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271002f947d566edba3e4c_4.jpg?v=1745718785",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271002f881d1a5e6e8c155_5.jpg?v=1745718785",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958806103",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671317591",
+      "title": "I Love Beer Headscarf",
+      "description": "The joy of summer comes from an ice-cold beer! Capturing those happy drinking memories, each piece in this series is crafted from crocheted fragments and stitched together. With high-contrast hearts, frosty beers, calm smiles, dancing butterflies, and a cheeky orange warning for the hangover aftermath, day and night are made brighter by these memories. I’m sharing my joy through yarn to bring you a happy summer! This triangular scarf is filled with cheerful patterns and features playful scalloped ties. Versatile and adaptable, it can be worn as a headscarf, neckerchief, top, belt, or even wall art—because your happiness is yours to create.",
+      "handle": "i-love-beer-headscarf",
+      "tags": [
+        "I Love Beer",
+        "Top Seller"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960633943\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960601175\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "55.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727297948fb38004b78fd47_TJ202371_201.webp?v=1745718795",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272a3d5c774a0b63be0ddb_1.jpg?v=1745718795",
+              "width": 1198,
+              "height": 1198,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272a3dd8bc9bb538a26c89_2.jpg?v=1745718795",
+              "width": 1192,
+              "height": 1192,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272a3dab78afdf101fe666_3.jpg?v=1745718795",
+              "width": 1188,
+              "height": 1189,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272a3dda54fc946d0a2f68_5.jpg?v=1745718795",
+              "width": 1192,
+              "height": 1193,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272a3de24754f69d193f52_6.jpg?v=1745718795",
+              "width": 1188,
+              "height": 1188,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958838871",
+              "price": {
+                "amount": "55.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": {
+                "amount": "60.0",
+                "currencyCode": "AUD"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671350359",
+      "title": "Milk Cow Necklace",
+      "description": "Cows on the pasture bask in their sunshine, relaxed and carefree. This necklace features playful elements of little cows, hearts, and smiley faces. Black-and-white beads symbolize the cows, while colourful beads add a touch of whimsy.",
+      "handle": "milk-cow-necklace",
+      "tags": [
+        "Lazy Animals"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "40.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272761e24754f69d182155__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_2010.webp?v=1745718809",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727276bdbd8307fac97efe9_1.jpg?v=1745718809",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727276d48fb38004b783897_3.jpg?v=1745718809",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727276b273f00c15169e16f_4.jpg?v=1745718809",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727276ba360899135f16ea2_6.jpg?v=1745718809",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727276b3fb6aa509aa792c5_7.jpg?v=1745718809",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727276bb4a871897fdf5511_8.jpg?v=1745718809",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958871639",
+              "price": {
+                "amount": "40.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671383127",
+      "title": "Flat Cat Necklace",
+      "description": "A happy black & white cat showing off its belly, inviting gentle rubs. Its tummy has matching black and white spots, purring contentedly.",
+      "handle": "flat-cat-necklace",
+      "tags": [
+        "Lazy Animals"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960797783\",\"gid://shopify/Metaobject/138960830551\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "50.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672728dd041cd99015af1858__E4_BA_A7_E5_93_81800-800-_E7_99_BD_E5_BA_95_E5_9B_BE_201.webp?v=1745718818",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727291cb98345c0c4c4cdc2_800-800-1.jpg?v=1745718818",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727291caad62a5fb8717918_800-800-2.jpg?v=1745718818",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727291c43da26bbce04d472_800-800-3.jpg?v=1745718818",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727291c363df89b80d90593_800-800-4.jpg?v=1745718818",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727291c363df89b80d90597_800-800-6.jpg?v=1745718818",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958904407",
+              "price": {
+                "amount": "50.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671415895",
+      "title": "Smiling Dog Earrings",
+      "description": "A happy little dog with a smiling face, full of love for life, sports, and self-care! Let’s boost our dopamine and embrace joy together!",
+      "handle": "smiling-dog-earrings",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960633943\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672717ebd8bc9bb5389acf33__E4_BA_A7_E5_93_81800X800-_E8_80_B3_E7_8E_AF-_E9_80_8F_E6_98_8E_E5_BA_95_E7_B4_A0_E6_9D_901_E5_BC_A0.webp?v=1745718828",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672718d1cb09c6c7743e6e9c_1.jpg?v=1745718828",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672718d1c169f205aa256136_2.jpg?v=1745718828",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672718d1a360899135e6cc35_3.jpg?v=1745718828",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672718d1c169f205aa25613a_4.jpg?v=1745718828",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958937175",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671448663",
+      "title": "Smiling Heart Earrings",
+      "description": "I’ve fallen in love with this cheerful, sunlit smiley face. On every tough day, it seems to remind you, “Everything will be okay.” Made with colourful cotton yarn and ceramic seed beads in a crochet design, with a heart-shaped link in the centre. Winky! Playful, dangling heart earrings.",
+      "handle": "smiling-heart-earrings",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960732247\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727146ba360899135e4c07f__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_205.webp?v=1745718837",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727154141f0c324a90dac07_1.jpg?v=1745718837",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727154182aa37fea6491ec4_2.jpg?v=1745718837",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727154189781f1554580404_3.jpg?v=1745718837",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271541a40cda05725767a5_4.jpg?v=1745718837",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684958969943",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671481431",
+      "title": "Twistable Flower Earrings",
+      "description": "Flowers growing together toward the sun, with a branch shaped like the number “9” that can be styled freely. The little eyes on the flowers add a playful touch to the design.",
+      "handle": "twistable-flower-earrings",
+      "tags": [
+        "Too Hot"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960732247\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "45.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270dea1a5a16882681c88f__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_E8_80_B3_E7_8E_AF_204.webp?v=1745718848",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270dfad8bc9bb53896840d_1.jpg?v=1745718848",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270df9466a6a373e1e919a_2.jpg?v=1745718848",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270dfadc6305cc1d00b0d2_4.jpg?v=1745718848",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270dfaad182a3247f055eb_6.jpg?v=1745718848",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270dfa3fb6aa509a9e1985_7.jpg?v=1745718848",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684959002711",
+              "price": {
+                "amount": "45.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671579735",
+      "title": "Fluffy Radioactive Earrings",
+      "description": "Original pom-pom earrings. The soft, fluffy balls are gentle on the skin. Made with eco-dyed cotton yarn, free from any additives.",
+      "handle": "fluffy-radioactive-earrings",
+      "tags": [
+        "Radioactivity"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960633943\",\"gid://shopify/Metaobject/138960601175\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f8d837e90ed2a06b1805__E7_BB_BF_E8_89_B2.webp?v=1745718856",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f99dae56b39e2488870f_3.jpg?v=1745718856",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f99d041cd9901595c35c_4.jpg?v=1745718856",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f99d83e251cacd7899e9_5.jpg?v=1745718856",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726f8eb07fb4e48d4e3dbcb__E6_97_A0logo.jpg?v=1745718856",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684960575575",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671645271",
+      "title": "Twistable Dog Ear Necklace",
+      "description": "This necklace is made from imported antique beads, agate beads, and glass beads, with versatile black and white ceramic seed beads, highlighted by pops of vibrant orange and magenta. The adorable dog charm in the centre adds an extra touch of cuteness, making it a truly playful and eye-catching piece.",
+      "handle": "twistable-dog-ear-necklace",
+      "tags": [
+        "Lazy Animals"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960699479\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "60.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727239889781f15545de2b2__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_208.webp?v=1745718867",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672723a0c169f205aa29b17b_1.jpg?v=1745718867",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672723a05452fe78275fad8d_2.jpg?v=1745718867",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672723a038d6c49c23c89efd_3.jpg?v=1745718867",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672723a0f947d566edc1d64a_4.jpg?v=1745718867",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672723a0f947d566edc1d64e_6.jpg?v=1745718867",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684960641111",
+              "price": {
+                "amount": "60.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671678039",
+      "title": "Unbreakable Vase Lighter Bag",
+      "description": "From the vase shape and pattern combinations to the hand-crocheted textures, every detail strives for precision and beauty. This small woven bag is perfect for holding a lighter, vape, or lipstick. The meticulous details enhance its uniqueness and practicality.",
+      "handle": "unbreakable-vase-lighter-bag",
+      "tags": [
+        "Unbreakable Vase"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960699479\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272a8b041cd99015afc3c9__E4_BA_A7_E5_93_81800-800-_E9_80_8F_E6_98_8E_E5_BA_95.webp?v=1745718881",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272c5f363df89b80da4625__E4_BA_A7_E5_93_81-17143.jpg?v=1745718881",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272c6057a3cb20b4b74ff4__E4_BA_A7_E5_93_81-17145.jpg?v=1745718881",
+              "width": 1920,
+              "height": 2570,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272c5f89781f1554619b7f__E4_BA_A7_E5_93_81-17152.jpg?v=1745718881",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272c60a360899135f3674b__E4_BA_A7_E5_93_81-17156.jpg?v=1745718881",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272c5fa40cda057260c921__E4_BA_A7_E5_93_81-17162.jpg?v=1745718881",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272c5f89781f1554619b94__E4_BA_A7_E5_93_81-17169.jpg?v=1745718881",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684960673879",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671710807",
+      "title": "Coffee Bean Hairband",
+      "description": "A cup of coffee, happiness takes off. This energising, refreshing, and aromatic coffee series doubles the joy with every order! Hand-crocheted coffee-themed headband, crafted with a mix of yarns. Packed with versatile details, it instantly perks you up and brings vibrant energy.",
+      "handle": "coffee-bean-hairband",
+      "tags": [
+        "Coffee Break"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960666711\",\"gid://shopify/Metaobject/138960699479\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "50.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271deb48fb38004b746dd3__E4_BA_A7_E5_93_81800-800-_E9_80_8F_E6_98_8E_E5_9B_BE.webp?v=1745718895",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271e0cda54fc946d0591f6__E4_BA_A7_E5_93_81-29576.jpg?v=1745718895",
+              "width": 1920,
+              "height": 2879,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271e0c4a28a6de28fb50b6__E4_BA_A7_E5_93_81-29581.jpg?v=1745718895",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271e0bae56b39e24a0ff27__E4_BA_A7_E5_93_81-29612.jpg?v=1745718895",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271e0ce24754f69d142cab__E4_BA_A7_E5_93_81-29620.jpg?v=1745718895",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271e0c1a5a168826877de0__E4_BA_A7_E5_93_81-29635.jpg?v=1745718895",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67271e0c7cab3af512c84fee__E4_BA_A7_E5_93_81-29640.jpg?v=1745718895",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684960706647",
+              "price": {
+                "amount": "50.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671776343",
+      "title": "Yellow Radioactive Rings",
+      "description": "This design plays with visual perception: the first ring is a light colour, the second is a dark black, and the final oversized ring with colour blocking draws the visual centre downward, enhancing the appearance of a smaller face and flattering facial shape.",
+      "handle": "yellow-radioactive-rings",
+      "tags": [
+        "Radioactivity"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960732247\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727032b1d64c7d0aa936866_5PNG.webp?v=1745718903",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727041b0696de61ad59680f_2H5A1154_20800.jpg?v=1745718903",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727041baca8c9d370eb4bcd_2H5A1157_20800.jpg?v=1745718903",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727041bb98345c0c4b62465_2H5A1171_20800.jpg?v=1745718903",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727041b5452fe7827537569_2H5A1175_20800.jpg?v=1745718903",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684960804951",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671841879",
+      "title": "Coffee Bean Necklace",
+      "description": "This versatile handmade crochet coffee bean necklace can also be worn as a bracelet or waist chain, adding a stylish touch to any look.",
+      "handle": "coffee-bean-necklace",
+      "tags": [
+        "Coffee Break"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960666711\",\"gid://shopify/Metaobject/138960699479\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "40.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672727a151b60d8f6259e710__E4_BA_A7_E5_93_81800-800-_E9_80_8F_E6_98_8E_E5_9B_BE.webp?v=1745718917",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672727d1cb09c6c77444c995__E4_BA_A7_E5_93_81-29519.jpg?v=1745718917",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672727d151b60d8f6259fbfb__E4_BA_A7_E5_93_81-29523.jpg?v=1745718917",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672727d1b4a871897fdf7db1__E4_BA_A7_E5_93_81-29526.jpg?v=1745718917",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672727d251b60d8f6259fc05__E4_BA_A7_E5_93_81-29550.jpg?v=1745718917",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672727d24267f23051034269__E4_BA_A7_E5_93_81-29563.jpg?v=1745718917",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672727d1a219f17588dd1d3c__E4_BA_A7_E5_93_81-29566.jpg?v=1745718917",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684960936023",
+              "price": {
+                "amount": "40.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671874647",
+      "title": "Eyes of Radioactivity Earrings",
+      "description": "Versatile purple fuzzy eye earrings. We bring innovative DNA to handcrafted crochet, allowing traditional craftsmanship to keep pace with modern trends. Made with eco-friendly dye, free from any additives.",
+      "handle": "eyes-of-radioactivity-earrings",
+      "tags": [
+        "Radioactivity"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fe2b260b2268f85ddc40__E4_BA_A7_E5_93_81800X800_20PNG.webp?v=1745718930",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726ff3d83e251cacd7c76d8_2.800X800_201.jpg?v=1745718930",
+              "width": 1920,
+              "height": 1920,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726ff3ddedb71049af222d3_2.800X800_202.jpg?v=1745718930",
+              "width": 1920,
+              "height": 1920,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726ff3d51b60d8f6244a1a3_2.800X800_203.jpg?v=1745718930",
+              "width": 1920,
+              "height": 1920,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726ff3d1a5a16882677c7bb_2.800X800_204.jpg?v=1745718930",
+              "width": 1920,
+              "height": 1920,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726ff3d466a6a373e180541_2.800X800_205.jpg?v=1745718930",
+              "width": 1920,
+              "height": 1920,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726ff3d363df89b80c67113_2.800X800_206.jpg?v=1745718930",
+              "width": 1920,
+              "height": 1920,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684960968791",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671907415",
+      "title": "Don't Stress Banana Earrings",
+      "description": "Unique accessories that won’t blend in. May these earrings bring you good vibes every day, keeping anxiety at bay.",
+      "handle": "don-t-stress-banana-earrings",
+      "tags": [
+        "Too Hot",
+        "Top Seller"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960765015\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "35.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e937d653b84f6b628722_6725b277dc6305cc1d2bce6c__25E4_25BA_25A7_25E5_2593_2581800X800-_25E7_2599_25BD_25E5_25BA_2595_25E5_259B_25BE_25E8_2580_25B3_25E7_258E_25AF_25201.webp?v=1745718941",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b62889c_6725b3c712066fe7b761aeb2__25E4_25BA_25BA_25E7_2589_25A9-6017.jpg?v=1745718941",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b6288a2_6725b3c7dc6305cc1d2c55a1__25E4_25BA_25BA_25E7_2589_25A9-6039.jpg?v=1745718941",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b6288a6_6725b3c7709ec03518c3566f__25E4_25BA_25BA_25E7_2589_25A9-6149.jpg?v=1745718941",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b628894_6725b3c7fa0034e4181c6673__25E4_25BA_25BA_25E7_2589_25A9-6172.jpg?v=1745718941",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b62889f_6725b3b27b55d7326340b3ba__25E4_25BA_25BA_25E7_2589_25A9-6190.jpg?v=1745718941",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684961001559",
+              "price": {
+                "amount": "35.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671940183",
+      "title": "Flat Cat Earrings",
+      "description": "A happy black & white cat showing off its belly, inviting gentle rubs. Its tummy features matching black and white spots, purring away contentedly.",
+      "handle": "flat-cat-earrings",
+      "tags": [
+        "Lazy Animals"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "35.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672a0ad10a90c1983262cd42__E4_BA_A7_E5_93_81800-800-_E7_99_BD_E5_BA_95_E5_9B_BE.png?v=1745718953",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672a0af0d6bf7b4c22173710__E4_BA_A7_E5_93_81-16332.jpg?v=1745718953",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672a0af06f6d27a5a3af9792__E4_BA_A7_E5_93_81-16335.jpg?v=1745718953",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672a0af053acefb7e612f703__E4_BA_A7_E5_93_81-16340.jpg?v=1745718953",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672a0aeffc409b13ab0626bd__E4_BA_A7_E5_93_81-16351.jpg?v=1745718953",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672a0af0838797df1013692c__E4_BA_A7_E5_93_81-16359.jpg?v=1745718954",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672a0b63ebbf22c1b519aeb4__E4_BA_A7_E5_93_81-16327.jpg?v=1745718954",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684961034327",
+              "price": {
+                "amount": "35.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405671972951",
+      "title": "Loving Smiling Face Necklace",
+      "description": "I’ve fallen in love with this bright, sunlit smiley face. On every tough day, it seems to remind you, “Everything will be okay.” Crafted from colourful cotton yarn and ceramic seed beads, this handmade smiley charm is paired with beads in various materials and colours to create a cheerful necklace.",
+      "handle": "loving-smiling-face-necklace",
+      "tags": [
+        "Smiley Face"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960568407\",\"gid://shopify/Metaobject/138960633943\",\"gid://shopify/Metaobject/138960732247\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "65.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672723ed274eb0e5c2574d0b__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_209.webp?v=1745718963",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672724dd7e4a315fe2efa3a3_2.jpg?v=1745718963",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672724dd0696de61ad6602bf_4.jpg?v=1745718963",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672724ddb4a871897fde6978_5.jpg?v=1745718963",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672724ddaca8c9d370f6fa0f_6.jpg?v=1745718963",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684961067095",
+              "price": {
+                "amount": "65.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405672005719",
+      "title": "Pop Butterfly Necklace",
+      "description": "A vibrant pop-art butterfly, handcrafted in crochet, with black, white, and yellow beads paired with shell accents—adding a full dose of dopamine to any outfit.",
+      "handle": "pop-butterfly-necklace",
+      "tags": [
+        "I Love Beer"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960797783\",\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960633943\",\"gid://shopify/Metaobject/138960601175\",\"gid://shopify/Metaobject/138960568407\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "50.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727217f48fb38004b75d4aa_XL202369_201.webp?v=1745718973",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272279cb09c6c774428ae9_1.jpg?v=1745718973",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/672722797e4a315fe2ee7d5e_2.jpg?v=1745718973",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272279ad182a3247f87399_3.jpg?v=1745718973",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272279466a6a373e269982_4.jpg?v=1745718973",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6727227951b60d8f6257ce72_7.jpg?v=1745718973",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684961099863",
+              "price": {
+                "amount": "50.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405672038487",
+      "title": "Unmatched Rainbow Earrings",
+      "description": "An asymmetrical design with one long and one short piece. These rainbow earrings can be twisted freely to create any shape you desire.",
+      "handle": "unmatched-rainbow-earrings",
+      "tags": [
+        "Radioactivity"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960601175\",\"gid://shopify/Metaobject/138960535639\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960633943\",\"gid://shopify/Metaobject/138960896087\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "30.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fceb38d6c49c23b14035__E9_80_8F_E6_98_8E_E5_9B_BE.webp?v=1745718983",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fdd3ad182a3247e0828d_1.jpg?v=1745718983",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fdd351b60d8f62412170_2.jpg?v=1745718983",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fdd3a360899135d0094f_3.jpg?v=1745718983",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fdd3274eb0e5c23d2da5_4.jpg?v=1745718983",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726fdd351b60d8f6241216d__E6_97_A0logo.jpg?v=1745718983",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684961132631",
+              "price": {
+                "amount": "30.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405672071255",
+      "title": "Twistable Ear Dog Earrings",
+      "description": "The ideal vacation life must include an adorable dog companion. Crafted from white and brown cotton yarn, this little dog head features lively eyes and a nose—utterly charming.",
+      "handle": "twistable-ear-dog-earrings",
+      "tags": [
+        "Lazy Animals"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960699479\",\"gid://shopify/Metaobject/138960765015\",\"gid://shopify/Metaobject/138960797783\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "35.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272e3d273f00c1516cbac1__E4_BA_A7_E5_93_81800X800-_E7_99_BD_E5_BA_95_E5_9B_BE_201.webp?v=1745718994",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272f3038d6c49c23cd6636_1.jpg?v=1745718994",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272f303fb6aa509aaafcd9_2.jpg?v=1745718994",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272f3051b60d8f625c9dd6_3.jpg?v=1745718994",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272f308c4911607f15a7ef_4.jpg?v=1745718994",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272f355c774a0b63c03add_6.jpg?v=1745718994",
+              "width": 1800,
+              "height": 1800,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684961165399",
+              "price": {
+                "amount": "35.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "gid://shopify/Product/7405672235095",
+      "title": "Unbreakable Vase Handbag",
+      "description": "A blend of linen thread and metal with unique knitted designs on each side, creating a mysterious mix of colours and patterns. This vase-shaped bag is not only a decorative piece but also an expression of handmade craftsmanship, combining style with a sense of emotional and practical versatility. Designed with both handle and strap options, it can be adjusted for any look.",
+      "handle": "unbreakable-vase-handbag",
+      "tags": [
+        "Unbreakable Vase"
+      ],
+      "productType": "",
+      "metafield": {
+        "value": "[\"gid://shopify/Metaobject/138960699479\",\"gid://shopify/Metaobject/138960830551\",\"gid://shopify/Metaobject/138960732247\",\"gid://shopify/Metaobject/138960896087\",\"gid://shopify/Metaobject/138960797783\",\"gid://shopify/Metaobject/138960765015\"]"
+      },
+      "priceRange": {
+        "minVariantPrice": {
+          "amount": "69.0",
+          "currencyCode": "AUD"
+        }
+      },
+      "images": {
+        "edges": [
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/800-800.png?v=1745719007",
+              "width": 800,
+              "height": 800,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b62886f_6725982c65923d5f312f23ce__25E4_25BA_25A7_25E5_2593_2581-17060.jpg?v=1745719007",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b628872_6725982c4dacaf7dcdbea426__25E4_25BA_25A7_25E5_2593_2581-17003.jpg?v=1745719007",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b628875_6725982ec80255656dd78cee__25E4_25BA_25A7_25E5_2593_2581-17022.jpg?v=1745719007",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b628857_6725982ec80255656dd78ceb__25E4_25BA_25A7_25E5_2593_2581-17025.jpg?v=1745719007",
+              "width": 1920,
+              "height": 1280,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b628883_6725982c0446ccfa55376a76__25E4_25BA_25A7_25E5_2593_2581-17036.jpg?v=1745719008",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          },
+          {
+            "node": {
+              "url": "https://cdn.shopify.com/s/files/1/0628/9470/2679/files/6726e938d653b84f6b62886c_6725982cdc6305cc1df3cce9__25E4_25BA_25A7_25E5_2593_2581-17093.jpg?v=1745719008",
+              "width": 1920,
+              "height": 2880,
+              "altText": null
+            }
+          }
+        ]
+      },
+      "collections": {
+        "edges": []
+      },
+      "variants": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/ProductVariant/41684961329239",
+              "price": {
+                "amount": "69.0",
+                "currencyCode": "AUD"
+              },
+              "compareAtPrice": null
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "policies": [
+    {
+      "handle": "privacy-policy",
+      "title": "Privacy Policy",
+      "body": "<div>\n  <p>Last updated: October 29, 2026</p>\n  <p>Beaubnana AU operates this store and website, including all related information, content, features, tools, products and services, in order to provide you, the customer, with a curated shopping experience (the  \"Services\"). Beaubnana AU is powered by Shopify, which enables us to provide the Services to you. This Privacy Policy describes how we collect, use, and disclose your personal information when you visit, use, or make a purchase or other transaction using the Services or otherwise communicate with us. If there is a conflict between our Terms of Service and this Privacy Policy, this Privacy Policy controls with respect to the collection, processing, and disclosure of your personal information. </p>\n  <p>Please read this Privacy Policy carefully. By using and accessing any of the Services, you acknowledge that you have read this Privacy Policy and understand the collection, use, and disclosure of your information as described in this Privacy Policy.</p>\n  <h2>Personal Information We Collect or Process</h2>\n  <p>When we use the term  \"personal information,\" we are referring to information that identifies or can reasonably be linked to you or another person. Personal information does not include information that is collected anonymously or that has been de-identified, so that it cannot identify or be reasonably linked to you. We may collect or process the following categories of personal information, including inferences drawn from this personal information, depending on how you interact with the Services, where you live, and as permitted or required by applicable law:</p>\n  <ul>\n      <li><strong>Contact details</strong> including your name, address, billing address, shipping address, phone number, and email address.</li>\n      <li><strong>Financial information</strong> including credit card, debit card, and financial account numbers, payment card information, financial account information, transaction details, form of payment, payment confirmation and other payment details.</li>\n      <li><strong>Account information</strong> including your username, password, security questions, preferences and settings.</li>\n      <li><strong>Transaction information</strong> including the items you view, put in your cart, add to your wishlist, or purchase, return, exchange or cancel and your past transactions.</li>\n      <li><strong>Communications with us</strong> including the information you include in communications with us, for example, when sending a customer support inquiry.</li>\n      <li><strong>Device information</strong> including information about your device, browser, or network connection, your IP address, and other unique identifiers.</li>\n      <li><strong>Usage information</strong> including information regarding your interaction with the Services, including how and when you interact with or navigate the Services. </li>\n  </ul>\n  <h2>Personal Information Sources</h2>\n  <p>We may collect personal information from the following sources:</p>\n  <ul>\n      <li><strong>Directly from you</strong> including when you create an account, visit or use the Services, communicate with us, or otherwise provide us with your personal information;</li>\n      <li><strong>Automatically through the Services</strong> including from your device when you use our products or services or visit our websites, and through the use of cookies and similar technologies;</li>\n      <li><strong>From our service providers</strong> including when we engage them to enable certain technology and when they collect or process your personal information on our behalf; </li>\n      <li><strong>From our partners or other third parties.</strong></li>\n  </ul>\n  <h2>How We Use Your Personal Information</h2>\n  <p>Depending on how you interact with us or which of the Services you use, we may use personal information for the following purposes:</p>\n  <ul>\n      <li><strong>Provide, Tailor, and Improve the Services.</strong> We use your personal information to provide you with the Services, including to perform our contract with you, to process your payments, to fulfill your orders, to remember your preferences and items you are interested in, to send notifications to you related to your account, to process purchases, returns, exchanges or other transactions, to create, maintain and otherwise manage your account, to arrange for shipping, to facilitate any returns and exchanges, to enable you to post reviews, and to create a customized shopping experience for you, such as recommending products related to your purchases. This may include using your personal information to better tailor and improve the Services.</li>\n      <li><strong>Marketing and Advertising.</strong> We use your personal information for marketing and promotional purposes, such as to send marketing, advertising and promotional communications by email, text message or postal mail, and to show you online advertisements for products or services on the Services or other websites, including based on items you previously have purchased or added to your cart and other activity on the Services. </li>\n      <li><strong>Security and Fraud Prevention.</strong> We use your personal information to authenticate your account, to provide a secure payment and shopping experience, detect, investigate or take action regarding possible fraudulent, illegal, unsafe, or malicious activity, protect public safety, and to secure our services. If you choose to use the Services and register an account, you are responsible for keeping your account credentials safe. We highly recommend that you do not share your username, password or other access details with anyone else.</li>\n      <li><strong>Communicating with You.</strong> We use your personal information to provide you with customer support, to be responsive to you, to provide effective services to you and to maintain our business relationship with you. </li>\n      <li><strong>Legal Reasons.</strong> We use your personal information to comply with applicable law or respond to valid legal process, including requests from law enforcement or government agencies, to investigate or participate in civil discovery, potential or actual litigation, or other adversarial legal proceedings, and to enforce or investigate potential violations of our terms or policies.</li>\n  </ul>\n  <h2>How We Disclose Personal Information</h2>\n  <p>In certain circumstances, we may disclose your personal information to third parties for legitimate purposes subject to this Privacy Policy. Such circumstances may include:</p>\n  <ul>\n      <li>With Shopify, vendors and other third parties who perform services on our behalf (e.g. IT management, payment processing, data analytics, customer support, cloud storage, fulfillment and shipping).</li>\n      <li>With business and marketing partners to provide marketing services and advertise to you.  For example, we use Shopify to support personalized advertising with third-party services based on your online activity with different merchants and websites.  Our business and marketing partners will use your information in accordance with their own privacy notices. Depending on where you reside, you may have a right to direct us not to share information about you to show you targeted advertisements and marketing based on your online activity with different merchants and websites. You can exercise your rights to opt-out of those uses <a href=\"\"> here</a> .</li>\n      <li>When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through your use of social media widgets or login integrations.</li>\n      <li>With our affiliates or otherwise within our corporate group.</li>\n      <li>\n      In connection with a business transaction such as a merger or bankruptcy, to comply with any applicable legal obligations (including to respond to subpoenas, search warrants and similar requests), to enforce any applicable terms of service or policies, and to protect or defend the Services, our rights, and the rights of our users or others.\n      </li>\n  </ul>\n  <h2>Relationship with Shopify</h2>\n  <p>The Services are hosted by Shopify, which collects and processes personal information about your access to and use of the Services in order to provide and improve the Services for you. Information you submit to the Services will be transmitted to and shared with Shopify as well as third parties that may be located in countries other than where you reside, in order to provide and improve the Services for you. In addition, to help protect, grow, and improve our business, we use certain Shopify enhanced features that incorporate data and information obtained from your interactions with our Store, along with other merchants and with Shopify. To provide these enhanced features, Shopify may make use of personal information collected about your interactions with our store, along with other merchants, and with Shopify. In these circumstances, Shopify is responsible for the processing of your personal information, including for responding to your requests to exercise your rights over use of your personal information for these purposes. To learn more about how Shopify uses your personal information and any rights you may have, you can visit the <a href=\"https://www.shopify.com/legal/privacy/app-users\">Shopify Consumer Privacy Policy</a> . Depending on where you live, you may exercise certain rights with respect to your personal information here <a href=\"https://privacy.shopify.com/en\">Shopify Privacy Portal Link</a>. </p>\n  <h2>Third Party Websites and Links</h2>\n  <p>The Services may provide links to websites or other online platforms operated by third parties. If you follow links to sites not affiliated or controlled by us, you should review their privacy and security policies and other terms and conditions. We do not guarantee and are not responsible for the privacy or security of such sites, including the accuracy, completeness, or reliability of information found on these sites. Information you provide on public or semi-public venues, including information you share on third-party social networking platforms may also be viewable by other users of the Services and/or users of those third-party platforms without limitation as to its use by us or by a third party. Our inclusion of such links does not, by itself, imply any endorsement of the content on such platforms or of their owners or operators, except as disclosed on the Services.</p>\n  <h2>Children's Data</h2>\n  <p>The Services are not intended to be used by children, and we do not knowingly collect any personal information about children under the age of majority in your jurisdiction. If you are the parent or guardian of a child who has provided us with their personal information, you may contact us using the contact details set out below to request that it be deleted.As of the Effective Date of this Privacy Policy, we do not have actual knowledge that we  \"share\" or  \"sell\" (as those terms are defined in applicable law) personal information of individuals under 16 years of age.</p>\n  <h2>Security and Retention of Your Information</h2>\n  <p>Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee \"perfect security.\" In addition, any information you send to us may not be secure while in transit. We recommend that you do not use unsecure channels to communicate sensitive or confidential information to us.</p>\n  <p>How long we retain your personal information depends on different factors, such as whether we need the information to maintain your account, to provide you with Services, comply with legal obligations, resolve disputes or enforce other applicable contracts and policies.</p>\n  <h2>Your Rights and Choices</h2>\n  <p>Depending on where you live, you may have some or all of the rights listed below in relation to your personal information. However, these rights are not absolute, may apply only in certain circumstances and, in certain cases, we may decline your request as permitted by law.</p>\n  <ul>\n      <li><strong>Right to Access / Know.</strong> You may have a right to request access to personal information that we hold about you.</li>\n      <li><strong>Right to Delete.</strong> You may have a right to request that we delete personal information we maintain about you.</li>\n      <li><strong>Right to Correct.</strong> You may have a right to request that we correct inaccurate personal information we maintain about you.</li>\n      <li><strong>Right of Portability.</strong> You may have a right to receive a copy of the personal information we hold about you and to request that we transfer it to a third party, in certain circumstances and with certain exceptions.</li>\n      \n      <li>\n      <strong>Managing Communication Preferences.</strong> We may send you promotional emails, and you may opt out of receiving these at any time by using the unsubscribe option displayed in our emails to you. If you opt out, we may still send you non-promotional emails, such as those about your account or orders that you have made.\n      </li>\n  </ul>\n  <div>\n      \n  </div>\n  <p>You may exercise any of these rights where indicated on the Services or by contacting us using the contact details provided below. To learn more about how Shopify uses your personal information and any rights you may have, including rights related to data processed by Shopify, you can visit https://privacy.shopify.com/en. </p>\n  <p>We will not discriminate against you for exercising any of these rights. We may need to verify your identity before we can process your requests, as permitted or required under applicable law. In accordance with applicable laws, you may designate an authorized agent to make requests on your behalf to exercise your rights. Before accepting such a request from an agent, we will require that the agent provide proof you have authorized them to act on your behalf, and we may need you to verify your identity directly with us. We will respond to your request in a timely manner as required under applicable law.</p>\n  <h2>Complaints</h2>\n  <p>If you have complaints about how we process your personal information, please contact us using the contact details provided below. Depending on where you live, you may have the right to appeal our decision by contacting us using the contact details set out below, or lodge your complaint with your local data protection authority.</p>\n  <h2>International Transfers</h2>\n  <p>Please note that we may transfer, store and process your personal information outside the country you live in. </p>\n  <p>If we transfer your personal information out of the European Economic Area or the United Kingdom, we will rely on recognized transfer mechanisms like the European Commission's Standard Contractual Clauses, or any equivalent contracts issued by the relevant competent authority of the UK, as relevant, unless the data transfer is to a country that has been determined to provide an adequate level of protection.</p>\n  <h2>Changes to This Privacy Policy</h2>\n  <p>We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will post the revised Privacy Policy on this website, update the  \"Last updated\" date and provide notice as required by applicable law.</p>\n  <h2>Contact</h2>\n  <p>Should you have any questions about our privacy practices or this Privacy Policy, or if you would like to exercise any of the rights available to you, please email us at sylvain97@gmail.com. You can find our other contact details on our contact information policy. </p>\n</div>"
+    },
+    {
+      "handle": "refund-policy",
+      "title": "Refund Policy",
+      "body": "<p class=\"p1\"><b>Return Policy</b><b></b></p>\n<p class=\"p3\">As a small business, we strive to ensure customer satisfaction while balancing our capabilities. We have a <strong>7</strong><b>-day return policy</b>, which means you have 7 days after receiving your item to request a return.</p>\n<p class=\"p3\">To be eligible for a return, your item must be in the same condition as when you received it – unworn or unused, with tags, and in its original packaging. You’ll also need the receipt or proof of purchase.</p>\n<p class=\"p3\">To start a return, please contact us at <b>hello@beaubnana.com.au</b>.</p>\n<p class=\"p3\">For any questions regarding returns, feel free to reach out to us at <b>hello@beaubnana.com.au</b>.</p>\n<p class=\"p1\"><b>Damages and Issues</b><b></b></p>\n<p class=\"p3\">We encourage you to inspect your order upon receipt and contact us immediately if the item is defective, damaged, or if you received the wrong item. This way, we can evaluate the issue and find the best resolution for you.</p>\n<p class=\"p1\"><b>Exceptions / Non-Returnable Items</b><b></b></p>\n<p class=\"p3\">Certain items cannot be returned, such as:</p>\n<p class=\"p4\"><span class=\"Apple-tab-span\"> </span>•<span class=\"Apple-tab-span\"> </span>Custom products (e.g., special orders or personalised items)</p>\n<p class=\"p4\"><span class=\"Apple-tab-span\"> </span>•<span class=\"Apple-tab-span\"> </span>Earrings for hygiene reasons</p>\n<p class=\"p4\"><span class=\"Apple-tab-span\"> </span>•<span class=\"Apple-tab-span\"> </span>Sale items or gift cards</p>\n<p class=\"p4\">If you have any questions about the eligibility of your specific item, please get in touch with us before making your purchase.</p>\n<p class=\"p1\"><b>Exchanges</b><b></b></p>\n<p class=\"p3\">We do not offer direct exchanges. If you wish to change an item, please return the original item (following the return process), and make a separate purchase for the new product once your return is accepted.</p>\n<p class=\"p1\"><b>Refunds</b><b></b></p>\n<p class=\"p3\">Once we receive and inspect your return, we will notify you if your refund is approved. If approved, we’ll process the refund to your original payment method within 10 business days. Please keep in mind that it may take additional time for your bank or credit card company to process and post the refund.</p>\n<p class=\"p2\"><br></p>\n<p class=\"p3\">If more than 15 business days have passed since we approved your return and you have not received your refund, please contact us at <b>hello@beaubnana.com.au</b>.</p>\n<p class=\"p2\"><br></p>\n<p class=\"p1\"><b>Note for European Union Customers</b><b></b></p>\n<p class=\"p3\">If you are located in the European Union, you have the right to cancel or return your order within 14 days, for any reason and without justification. The item must be in its original condition, unworn or unused, with tags, and in its original packaging. Proof of purchase is also required.</p>\n<p class=\"p2\"><br></p>\n<p class=\"p3\">Feel free to adjust any specifics like the return address, contact email, or any additional conditions that better fit your store’s policies.</p>"
+    },
+    {
+      "handle": "shipping-policy",
+      "title": "Shipping Policy",
+      "body": "<p class=\"p1\"><b>Shipping Policy</b><b></b></p>\n<p class=\"p3\"><b>Processing Time</b><b></b></p>\n<p class=\"p4\">All orders are processed within 1-2 business days (excluding weekends and holidays) after receiving your order confirmation email. You will receive another notification when your order has shipped.</p>\n<p class=\"p2\"><br></p>\n<p class=\"p3\"><b>Domestic Shipping Rates and Estimates</b></p>\n<p class=\"p4\">We offer flat-rate shipping options for orders within Australia:</p>\n<p class=\"p5\"><span class=\"Apple-tab-span\"> </span>•<span class=\"Apple-tab-span\"> </span><b>Standard Shipping</b>: AUD $9 (3-7 business days)</p>\n<p class=\"p5\"><span class=\"Apple-tab-span\"> </span>•<span class=\"Apple-tab-span\"> </span><b>Express Shipping</b>: AUD $15 (1-3 business days)</p>\n<p class=\"p4\">Free standard shipping is available for orders over AUD $100 within Australia.</p>\n<p class=\"p4\">&nbsp;</p>\n<p class=\"p3\"><b>International Shipping</b><b></b></p>\n<p class=\"p4\">We offer flat-rate international shipping:</p>\n<p class=\"p4\">AUD $20 (5-15 business days)</p>\n<p class=\"p2\"><br></p>\n<p class=\"p4\"><b>Please note</b>: International orders may be subject to import duties, taxes, and other charges. These fees are the responsibility of the customer and are not included in the shipping fee.</p>\n<p class=\"p2\"><br></p>\n<p class=\"p3\"><b>Estimated Delivery Time for International Orders</b><b></b></p>\n<p class=\"p5\"><span class=\"Apple-tab-span\"> </span>•<span class=\"Apple-tab-span\"> </span><b>Standard International Shipping</b>: 7-21 business days</p>\n<p class=\"p5\"><span class=\"Apple-tab-span\"> </span>•<span class=\"Apple-tab-span\"> </span><b>Express International Shipping</b>: 3-7 business days</p>\n<p class=\"p2\"><br></p>\n<p class=\"p3\"><b>How do I check the status of my order?</b><b></b></p>\n<p class=\"p4\">When your order has shipped, you will receive an email notification from us, including a tracking number you can use to check its status. Please allow 48 hours for the tracking information to become available.</p>\n<p class=\"p4\">If you haven’t received your order within the estimated delivery timeframe, please contact us at <b>hello@beaubnana.com.au</b> with your name and order number, and we will look into it for you.</p>\n<p class=\"p2\"><br></p>\n<p class=\"p3\"><b>Refunds, Returns, and Exchanges</b><b></b></p>\n<p class=\"p4\">Please refer to our <a href=\"https://beaubnana.com.au/policies/refund-policy\"><b>Return Policy</b></a> for information on returns and exchanges.</p>"
+    },
+    {
+      "handle": "terms-of-service-policy",
+      "title": "Terms of Service",
+      "body": "<p class=\"p1\"><b>Terms of Service</b><b></b></p>\n<p class=\"p3\"><b>Last updated:</b> 28/4/25</p>\n<p class=\"p4\"><b>1. General</b><b></b></p>\n<p class=\"p3\">Welcome to Beaubnana! By accessing or using our website, you agree to be bound by these Terms of Service and to comply with our policies. If you do not agree, please refrain from using our website.</p>\n<p class=\"p4\"><b>2. Orders</b><b></b></p>\n<p class=\"p3\">By placing an order on our website, you agree to provide accurate, current, and complete information about yourself. We reserve the right to refuse or cancel orders if we detect suspicious or fraudulent activity.</p>\n<p class=\"p4\"><b>3. Payment</b><b></b></p>\n<p class=\"p3\">All prices on our website are listed in AUD (Australian Dollars). Payment is due at the time of purchase. We accept major credit cards and other payment methods as specified at checkout.</p>\n<p class=\"p4\"><b>4. Shipping and Delivery</b><b></b></p>\n<p class=\"p3\">For details on shipping, delivery times, and tracking, please refer to our&nbsp;<a href=\"https://beaubnana.com.au/policies/shipping-policy\">Shipping Policy.</a></p>\n<p class=\"p4\"><b>5. Returns and Exchanges</b><b></b></p>\n<p class=\"p3\">We strive to ensure customer satisfaction. For information on our returns and exchange policies, please see our <a href=\"https://beaubnana.com.au/policies/refund-policy\">Return Policy.</a></p>\n<p class=\"p4\"><b>6. Intellectual Property</b><b></b></p>\n<p class=\"p3\">All content on this website, including text, images, graphics, and logos, is the property of Beaubnana and is protected by copyright and trademark laws. Unauthorized use of our intellectual property is strictly prohibited.</p>\n<p class=\"p4\"><b>7. Disclaimer of Warranties</b><b></b></p>\n<p class=\"p3\">Our website and its content are provided on an “as is” basis without any warranties of any kind, either express or implied. We do not guarantee the accuracy, completeness, or reliability of the content on our website.</p>\n<p class=\"p4\"><b>8. Limitation of Liability</b><b></b></p>\n<p class=\"p3\">To the maximum extent permitted by law, Beaubnana shall not be liable for any damages arising from the use or inability to use our website or products, including incidental, indirect, or consequential damages.</p>\n<p class=\"p4\"><b>9. Changes to Terms</b><b></b></p>\n<p class=\"p3\">We reserve the right to update or change these Terms of Service at any time. The latest version will be posted on this page, and continued use of the website implies acceptance of the updated terms.</p>\n<p class=\"p4\"><b>10. Contact Information</b><b></b></p>\n<p class=\"p3\">For questions or concerns regarding these Terms of Service, please contact us at:</p>\n<p class=\"p3\"><b>Email</b>: hello@beaubnana.com.au</p>"
+    },
+    {
+      "handle": "contact-information-policy",
+      "title": "Contact information",
+      "body": "\n<p>Trade name: Beaubnana</p>\n<p>Email: hello@beaubnana.com.au</p>\n<p>Physical address: <meta charset=\"utf-8\">31 Sunrise Drive, Greensborough VIC 3088, Australia<br></p>\n<p>ABN: 87664005233<br><meta charset=\"utf-8\"></p>\n"
+    }
+  ]
+}

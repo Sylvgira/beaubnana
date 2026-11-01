@@ -1,0 +1,12 @@
+---
+import type { Product } from '../lib/shopify';
+interface Props { product: Product }
+const { product } = Astro.props;
+---
+{product.images.edges.map(({ node: image }, index) => (
+  <div role="listitem" class="product-header_item w-dyn-item">
+    <div class="product-header_image-wrapper">
+      <img src={image.url} loading={index === 0 ? 'eager' : 'lazy'} alt={image.altText || `${product.title} - Image ${index + 1}`} class="product-header_image" />
+    </div>
+  </div>
+))}

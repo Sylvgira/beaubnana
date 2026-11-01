@@ -1,0 +1,21 @@
+{
+  "storefront": {
+    "domain": "0mif5c-fw.myshopify.com",
+    "storefrontAccessToken": "ec8f31c45cba8198d673e15d440d75d7"
+  },
+  "buy": {
+    "domain": "0mif5c-fw.myshopify.com",
+    "storefrontAccessToken": "26f55eabc777cb2e8b91c1233a679536",
+    "moneyFormat": "%24%7B%7Bamount%7D%7D",
+    "buttonStyles": {
+      ":hover": {
+        "background-color": "#e6318e"
+      },
+      "background-color": "#e4007f",
+      ":focus": {
+        "background-color": "#e6318e"
+      },
+      "border-radius": "8px 0 0 8px"
+    }
+  }
+}

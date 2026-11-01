@@ -1,0 +1,11 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../lib/paths';
+---
+<SiteLayout title="Page not found | Beaubnana">
+  <section class="padding-global padding-section-large"><div class="container-large">
+    <h1 class="heading-style-h2">Page not found</h1><div class="spacer-2"></div>
+    <p>That page has moved or is no longer available.</p><div class="spacer-2"></div>
+    <a class="button w-inline-block" href={withBase('all-products.html')}>Browse the collection</a>
+  </div></section>
+</SiteLayout>

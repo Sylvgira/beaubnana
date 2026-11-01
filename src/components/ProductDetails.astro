@@ -1,0 +1,73 @@
+---
+import { withBase } from '../lib/paths';
+import type { Product } from '../lib/shopify';
+import ProductGallery from './ProductGallery.astro';
+import ProductPrice from './ProductPrice.astro';
+interface Props { product: Product }
+const { product } = Astro.props;
+---
+
+        <header class="section_product-header">
+          <div class="padding-global padding-section-xlarge no-padding-bottom">
+            <div class="container-large">
+              <div class="product-header_component">
+                <div class="is-grid">
+                  <div class="product-header_gallery">
+                    <div class="product-header_list-wrapper w-dyn-list">
+                      <div role="list" class="product-header_list w-dyn-items"><ProductGallery product={product} /></div>
+                    </div>
+                  </div>
+                  <div class="product-header_sticky">
+                    <div class="product-header_product-details">
+                      <div class="breadcrumb_component">
+                        <a href={withBase("all-products.html")} class="breadcrumb-link w-inline-block">
+                          <div>Shop all</div>
+                        </a>
+                        <div class="breadcrumb-divider w-embed">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="spacer-1d5"></div>
+                      <h1 class="heading-style-h3">{product.title}</h1>
+                      <div class="product-header_price-wrapper">
+                        <div class="heading-style-h5"><ProductPrice product={product} /></div>
+                      </div>
+                      <div class="spacer-1d5"></div>
+                      <p>{product.description}</p>
+                      <div class="spacer-3"></div>
+                      <div class="button">
+                        <div data-shopify-id={product.id.split("/").pop()} id="product-component" class="shopify-button-wrapper"></div>
+                        <span class="button_text" style="pointer-events: none;">Add to Cart</span>
+                        <span class="button_dot"></span>
+                      </div>
+                      <div class="spacer-3"></div>
+                      <div class="text-rich-text w-richtext">
+                        <h6><strong>Standard Shipping</strong></h6>
+                        <p>
+                          Shipping calculated at checkout. Read more on our
+                          shipping page.
+                        </p>
+                        <h6>Returns</h6>
+                        <p>
+                          As a small business, we strive to ensure customer
+                          satisfaction while balancing our capabilities. We have
+                          a 7-day return policy, which means you have 7 days
+                          after receiving your item to request a return.
+                        </p>
+                        <p>
+                          To be eligible for a return, your item must be in the
+                          same condition as when you received it – unworn or
+                          unused, with tags, and in its original packaging.
+                          You'll also need the receipt or proof of purchase.
+                          Read more on our returns page.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
