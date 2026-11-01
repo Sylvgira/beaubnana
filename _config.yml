@@ -1,0 +1,16 @@
+# The former GitHub Pages host serves only the two migration redirects.
+# Keep Jekyll from interpreting Astro's JavaScript frontmatter as YAML.
+exclude:
+  - src
+  - public
+  - tests
+  - docs
+  - node_modules
+  - dist
+  - README.md
+  - package.json
+  - package-lock.json
+  - astro.config.mjs
+  - playwright.config.ts
+  - tsconfig.json
+  - wrangler.jsonc
