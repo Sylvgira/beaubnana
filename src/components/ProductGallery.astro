@@ -2,11 +2,180 @@
 import type { Product } from '../lib/shopify';
 interface Props { product: Product }
 const { product } = Astro.props;
+const images = product.images.edges.map(({node}) => node);
+const photoId = (index: number) => `photo-${product.handle}-${index + 1}`;
+const thumbnail = (url: string) => {
+  const source = new URL(url);
+  source.searchParams.set('width', '112');
+  return source.href;
+};
 ---
-{product.images.edges.map(({ node: image }, index) => (
-  <div role="listitem" class="product-header_item w-dyn-item">
-    <div class="product-header_image-wrapper">
-      <img src={image.url} loading={index === 0 ? 'eager' : 'lazy'} alt={image.altText || `${product.title} - Image ${index + 1}`} class="product-header_image" />
+{images.length > 0 && <product-photo-gallery class="product-header_gallery product-gallery" role="group" aria-label={`${product.title} photos`}>
+  <ul class="product-gallery_track" tabindex="0" aria-label="Product photos">
+    {images.map((image, index) => <li id={photoId(index)} class="product-gallery_slide">
+      <a class="product-gallery_open" href={image.url} data-photo={index} aria-label={`Enlarge photo ${index + 1} of ${images.length}: ${product.title}`}>
+        <img src={image.url} width={image.width || undefined} height={image.height || undefined}
+          loading={index === 0 ? 'eager' : 'lazy'} alt={image.altText || `${product.title} — photo ${index + 1}`}
+          class="product-header_image product-gallery_image" />
+        <span class="product-gallery_enlarge" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m6 0h6v-6" /></svg></span>
+      </a>
+    </li>)}
+  </ul>
+  {images.length > 1 && <nav class="product-gallery_thumbnails" aria-label="Choose a product photo">
+    {images.map((image, index) => <a href={`#${photoId(index)}`} data-thumbnail={index}
+      aria-label={`Show photo ${index + 1} of ${images.length}`} aria-current={index === 0 ? 'true' : undefined}>
+      <img src={thumbnail(image.url)} alt="" loading="lazy" width="56" height="56" />
+    </a>)}
+  </nav>}
+  <span class="product-gallery_status" aria-live="polite" aria-atomic="true">Photo 1 of {images.length}</span>
+  <dialog class="product-gallery_dialog" aria-label={`${product.title} enlarged photos`}>
+    <div class="product-gallery_toolbar">
+      <button type="button" data-zoom aria-pressed="false">Zoom in</button>
+      <button type="button" data-close aria-label="Close image viewer" autofocus>✕</button>
     </div>
-  </div>
-))}
+    <div class="product-gallery_viewport" tabindex="0" aria-label="Enlarged photo"><div class="product-gallery_canvas"><img data-enlarged alt="" /></div></div>
+    <div class="product-gallery_navigation">
+      {images.length > 1 && <button type="button" data-previous aria-label="Previous photo">←</button>}
+      <span data-position aria-live="polite" aria-atomic="true"></span>
+      {images.length > 1 && <button type="button" data-next aria-label="Next photo">→</button>}
+    </div>
+  </dialog>
+</product-photo-gallery>}
+
+<style>
+  .product-gallery { display: block; min-width: 0; width: 100%; overflow: visible; margin-right: 0; }
+  .product-gallery_track { display: grid; gap: var(--spacing--1-5, 1.5rem); margin: 0; padding: 0; list-style: none; }
+  .product-gallery_slide { min-width: 0; scroll-margin-top: 5rem; }
+  .product-gallery_open { display: block; position: relative; border-radius: var(--radius--regular, 1rem); overflow: hidden; cursor: zoom-in; }
+  .product-gallery_image { display: block; width: 100%; height: auto; }
+  .product-gallery_enlarge { position: absolute; right: .5rem; bottom: .5rem; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; background: #f7f4e8; color: #503a73; font-size: 1.5rem; }
+  .product-gallery_thumbnails { display: none; }
+  .product-gallery :is(a, button, [tabindex]):focus-visible { outline: 3px solid #503a73; outline-offset: -3px; }
+  .product-gallery_status { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .product-gallery_dialog { position: fixed; inset: 0; width: min(96vw, 75rem); height: 94dvh; max-width: 100%; max-height: 100%; margin: auto; padding: .75rem; border: 0; border-radius: 1rem; background: #f7f4e8; color: #503a73; }
+  .product-gallery_dialog[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: .5rem; }
+  .product-gallery_dialog::backdrop { background: rgb(0 0 0 / .75); }
+  .product-gallery_toolbar { display: flex; justify-content: space-between; }
+  .product-gallery_dialog button { min-width: 44px; min-height: 44px; padding: .5rem .75rem; border: 1px solid currentColor; border-radius: .5rem; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+  .product-gallery_viewport { overflow: auto; overscroll-behavior: contain; }
+  .product-gallery_canvas { display: grid; place-items: center; width: 100%; height: 100%; }
+  .product-gallery_canvas img { width: 100%; height: 100%; max-width: none; object-fit: contain; }
+  .product-gallery_dialog[data-zoomed] .product-gallery_canvas { width: 200%; height: 200%; }
+  .product-gallery_navigation { display: flex; align-items: center; justify-content: center; gap: 1rem; }
+  @media (max-width: 767px) {
+    .product-gallery { padding-right: 0; grid-column: 1 / -1; }
+    .product-gallery_track { grid-auto-flow: column; grid-auto-columns: 100%; gap: 0; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: thin; }
+    .product-gallery_slide { scroll-snap-align: start; scroll-snap-stop: always; }
+    .product-gallery_image { aspect-ratio: 1; height: auto; object-fit: contain; }
+    .product-gallery_thumbnails { display: flex; gap: .5rem; overflow-x: auto; margin-top: .75rem; padding: 3px; scrollbar-width: thin; }
+    .product-gallery_thumbnails a { flex: 0 0 56px; width: 56px; height: 56px; border-radius: .4rem; overflow: hidden; border: 2px solid transparent; }
+    .product-gallery_thumbnails a[aria-current="true"] { border-color: #503a73; }
+    .product-gallery_thumbnails img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  }
+</style>
+
+<script>
+  class ProductPhotoGallery extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.ready) return;
+      this.dataset.ready = 'true';
+      const track = this.querySelector<HTMLUListElement>('.product-gallery_track')!;
+      const links = Array.from(this.querySelectorAll<HTMLAnchorElement>('[data-photo]'));
+      const thumbnails = Array.from(this.querySelectorAll<HTMLAnchorElement>('[data-thumbnail]'));
+      const dialog = this.querySelector<HTMLDialogElement>('dialog')!;
+      const enlarged = this.querySelector<HTMLImageElement>('[data-enlarged]')!;
+      const viewport = this.querySelector<HTMLElement>('.product-gallery_viewport')!;
+      const zoom = this.querySelector<HTMLButtonElement>('[data-zoom]')!;
+      const status = this.querySelector<HTMLElement>('.product-gallery_status')!;
+      const position = this.querySelector<HTMLElement>('[data-position]')!;
+      const mobile = window.matchMedia('(max-width: 767px)');
+      let selected = 0;
+      let opener: HTMLElement | null = null;
+      let previousOverflow = '';
+      let frame = 0;
+
+      const announce = (index: number) => {
+        selected = index;
+        thumbnails.forEach((thumbnail, i) => i === index ? thumbnail.setAttribute('aria-current', 'true') : thumbnail.removeAttribute('aria-current'));
+        status.textContent = `Photo ${index + 1} of ${links.length}`;
+      };
+      const select = (index: number) => {
+        announce(Math.max(0, Math.min(links.length - 1, index)));
+        track.scrollTo({left: selected * track.clientWidth, behavior: 'instant'});
+        thumbnails[selected]?.scrollIntoView({block: 'nearest', inline: 'nearest'});
+      };
+      const resetZoom = () => {
+        dialog.removeAttribute('data-zoomed');
+        zoom.setAttribute('aria-pressed', 'false');
+        zoom.textContent = 'Zoom in';
+        viewport.scrollTo(0, 0);
+      };
+      const showEnlarged = (index: number) => {
+        announce((index + links.length) % links.length);
+        const image = links[selected].querySelector('img')!;
+        enlarged.src = links[selected].href;
+        enlarged.alt = image.alt;
+        position.textContent = `Photo ${selected + 1} of ${links.length}`;
+        resetZoom();
+      };
+      links.forEach((link, index) => {
+        link.setAttribute('aria-haspopup', 'dialog');
+        link.addEventListener('click', event => {
+          if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          opener = link;
+          showEnlarged(index);
+          previousOverflow = document.documentElement.style.overflow;
+          document.documentElement.style.overflow = 'hidden';
+          dialog.showModal();
+        });
+      });
+      thumbnails.forEach((thumbnail, index) => thumbnail.addEventListener('click', event => {
+        event.preventDefault();
+        select(index);
+      }));
+      track.addEventListener('keydown', event => {
+        if (mobile.matches && event.target === track && event.key === 'Enter') {
+          event.preventDefault();
+          links[selected].click();
+          return;
+        }
+        if (!mobile.matches || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        select(event.key === 'Home' ? 0 : event.key === 'End' ? links.length - 1 : selected + (event.key === 'ArrowRight' ? 1 : -1));
+        track.focus({preventScroll: true});
+      });
+      track.addEventListener('scroll', () => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(() => {
+          if (mobile.matches && !dialog.open) announce(Math.max(0, Math.min(links.length - 1, Math.round(track.scrollLeft / track.clientWidth))));
+        });
+      }, {passive: true});
+      new ResizeObserver(() => { if (mobile.matches) track.scrollTo({left: selected * track.clientWidth}); }).observe(track);
+      this.querySelector('[data-previous]')?.addEventListener('click', () => showEnlarged(selected - 1));
+      this.querySelector('[data-next]')?.addEventListener('click', () => showEnlarged(selected + 1));
+      dialog.addEventListener('keydown', event => {
+        if (!dialog.hasAttribute('data-zoomed') && ['ArrowLeft', 'ArrowRight'].includes(event.key)) {
+          event.preventDefault();
+          showEnlarged(selected + (event.key === 'ArrowRight' ? 1 : -1));
+        }
+      });
+      zoom.addEventListener('click', () => {
+        if (dialog.hasAttribute('data-zoomed')) return resetZoom();
+        dialog.setAttribute('data-zoomed', '');
+        zoom.setAttribute('aria-pressed', 'true');
+        zoom.textContent = 'Zoom out';
+        viewport.scrollTo((viewport.scrollWidth - viewport.clientWidth) / 2, (viewport.scrollHeight - viewport.clientHeight) / 2);
+      });
+      this.querySelector('[data-close]')!.addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+      dialog.addEventListener('close', () => {
+        document.documentElement.style.overflow = previousOverflow;
+        if (mobile.matches) select(selected);
+        resetZoom();
+        (mobile.matches ? links[selected] : opener)?.focus({preventScroll: true});
+      });
+    }
+  }
+  if (!customElements.get('product-photo-gallery')) customElements.define('product-photo-gallery', ProductPhotoGallery);
+</script>

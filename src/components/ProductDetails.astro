@@ -12,11 +12,7 @@ const { product } = Astro.props;
             <div class="container-large">
               <div class="product-header_component">
                 <div class="is-grid">
-                  <div class="product-header_gallery">
-                    <div class="product-header_list-wrapper w-dyn-list">
-                      <div role="list" class="product-header_list w-dyn-items"><ProductGallery product={product} /></div>
-                    </div>
-                  </div>
+                  <ProductGallery product={product} />
                   <div class="product-header_sticky">
                     <div class="product-header_product-details">
                       <div class="breadcrumb_component">
