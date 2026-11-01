@@ -1,135 +1,72 @@
-# Beaubnana Website
+# Beaubnana
 
-A converted Webflow Ecommerce build that now uses Shopify as the backend. The function of Shopify is to host the product details which are served through the custom UI that was created in Webflow.
+An Astro 7 static storefront for handmade crochet accessories, with the original Webflow visual design and Shopify Storefront / Buy Button integration. Shopify remains the product and checkout backend; the migration does not require a different Shopify plan.
 
-## Development Workflow
+## Development
 
-This project uses a development workflow that:
-1. Keeps all development files in the repository
-2. Filters out development files during deployment
+Use Node 24 or later.
 
-### File Organization
-
-- **Development Files**: Build scripts, templates, and utility files are kept in the repository
-- **Production Site**: Only customer-facing files are deployed to the live site
-
-### Development Files in Repository
-
-These files are committed to GitHub but excluded from the live site:
-- Build scripts (`build-*.js`, `dev-*.js`, `generate-*.js`)
-- Template files (`template.html`, `*.template.*`)
-- Internal pages (`internal-pages/`, `_drafts/`)
-
-## Local Development
-
-To set up for local development:
-
-```bash
-# Clone the repository
-git clone https://github.com/Sylvgira/beaubnana.git
-cd beaubnana
-
-# Install dependencies (if using npm)
+```sh
 npm ci
-
-# Copy the environment variables template
-cp .env.example .env
-
-# Edit .env with your Shopify credentials
-# Update the values in the .env file
-
-# Run the local development server
 npm run dev
 ```
 
-## Deployment
+Open `http://localhost:4321/beaubnana/`. Development and preview support the existing `.html` links. A checked-in public Shopify snapshot lets the site build without credentials; the browser continues to use the existing public Storefront and Buy Button configuration.
 
-Deployment is handled automatically by GitHub Actions when pushing to the main branch:
+To build fresh product and policy pages, copy `.env.example` to `.env` and set both `SHOPIFY_STORE_NAME` and `SHOPIFY_STOREFRONT_TOKEN`. The optional `SHOPIFY_BUY_SDK_TOKEN` overrides the public token used for purchase controls. No Admin API token is needed.
 
-1. The workflow checks out the repository
-2. Development files are filtered out
-3. Only production files are deployed to GitHub Pages
+`SHOPIFY_DATA_SOURCE` selects:
 
-See `.github/workflows/deploy.yml` for the deployment configuration.
+- `snapshot`: use `src/data/shopify-snapshot.json` for reproducible builds and local development.
+- `live`: fetch all products with cursor pagination and rendered policies through Storefront. Failed, empty or incomplete responses stop the build.
+- Unset: choose live when a store is configured, otherwise snapshot.
 
-## Setup
+Only public Storefront/Buy Button credentials are serialized into HTML. Never place an Admin API token in public configuration. The Contact Information policy is retained in the reviewed snapshot because Storefront does not expose that policy field.
 
-This project uses environment variables for secure API tokens. To set up:
+## Commands
 
-1. Copy `.env.example` to `.env` for local development (this file is ignored by git)
-2. Add your Shopify credentials to the `.env` file:
-   ```
-   SHOPIFY_STORE_NAME=your-store.myshopify.com
-   SHOPIFY_STOREFRONT_TOKEN=your_storefront_token
-   SHOPIFY_ADMIN_TOKEN=your_admin_token
-   ```
-3. For GitHub deployment, add these as repository secrets and variables:
-   - Add `SHOPIFY_STORE_NAME` as a repository variable
-   - Add `SHOPIFY_STOREFRONT_TOKEN` and `SHOPIFY_ADMIN_TOKEN` as repository secrets
+```sh
+npm run check       # Astro and TypeScript checks
+npm run build       # Static HTML and assets in dist/
+npm test            # Route, metadata, asset, policy and request-cache regression checks
+npm run preview     # Serve the production build locally
+npm run test:e2e    # Browser journeys against the production preview
+```
 
-The configuration system automatically:
-- Uses GitHub secrets and variables in production
-- Uses your local .env file for development
-- Generates the appropriate config.js file during build
+Before the first browser test run, install Chromium with `npx playwright install chromium`. Browser tests use recorded public Storefront responses and a Buy Button test double; they do not submit real orders. The real Shopify cart was also checked separately during migration.
 
-## Shopify Integration
+## Project structure
 
-### Storefront API
+```text
+src/
+  components/      Shared navigation, footer, cards, galleries and page sections
+  layouts/         Shared HTML shell, metadata, styles and page-specific scripts
+  pages/           Astro routes, including products/[handle] and policies/[handle]
+  lib/             Hosting paths, public configuration and build-time Shopify data
+  data/            Public configuration and the reviewed product/policy snapshot
+public/
+  css/             Existing visual styles
+  images/          Brand and local image assets
+  js/              Existing browser integration, UI controls and homepage motion
+tests/
+  browser/         Playwright navigation, filter/sort, keyboard and failure journeys
+  fixtures/        Recorded public Storefront data and an isolated Buy Button double
+```
 
-The website connects to Shopify using the Storefront API with the following credentials:
+Astro generates the existing 55 public pages, including all 46 product URLs. `build.format: 'file'` keeps `/all-products.html`, `/products/<handle>.html`, and `/policies/<handle>.html` working. Shared elements are Astro components; there are no string-replacement HTML generators or Express server.
 
-- Domain: `0wrz46-0q.myshopify.com`
-- Storefront Access Token: Stored as environment variable (see Setup section)
+The browser Shopify integration is retained as a classic script to keep its working SDK and filter behaviour stable. It resolves the hosting base from its own script URL, deduplicates Storefront reads, and preserves pre-rendered content during API failures. Images continue to use Shopify's CDN.
 
-### Buy Button Implementation
+## Hosting
 
-The site uses an optimized version of the Shopify Buy Button SDK:
+The default build uses `BASE_PATH=/beaubnana` and `SITE_URL=https://sylvgira.github.io` for the existing GitHub Pages URL. The deployment workflow builds fresh Shopify content, runs checks, and publishes only `dist/` to `gh-pages`. GitHub Pages must publish that branch rather than the raw Astro source on `main`.
 
-- **Product Pages**: Full buy button functionality is loaded on product pages where the `product-component` element exists with a valid `data-shopify-id` attribute.
-- **Non-Product Pages**: Only the cart functionality is initialized, reducing unnecessary code loading.
+For a later domain-root host such as Cloudflare, use:
 
-The implementation can be found in:
-- `js/shopify.js` - Contains the core Shopify API functionality including the optimized Buy Button code
-- `index.html` and product page templates - Call the centralized Shopify functions
+```sh
+BASE_PATH=/ SITE_URL=https://your-domain.example npm run build
+```
 
-### Modifying Products
+Upload the generated `dist/` directory. The app uses static output and needs no server adapter, Worker, runtime database, or deployment credentials to build the migration. No Cloudflare resources have been created or changed.
 
-When adding or updating products, make sure to:
-
-1. Create the product in Shopify admin
-2. Note the product ID from the Shopify admin URL (e.g., `7754559848505`)
-3. Add the ID to the `data-shopify-id` attribute of the `product-component` element for that product's page
-
-### Other Shopify Features
-
-The site also uses Shopify for:
-
-- Product collections (displaying top sellers)
-- Product type collections
-- Product carousels/marquees
-
-## File Naming Conventions
-
-See `TEMPLATE_CONVENTIONS.md` for details on file naming patterns used to separate development files from production files.
-
-## Development Notes
-
-- The site uses jQuery for DOM manipulation
-- Shopify's Buy Button SDK is loaded dynamically to reduce page load time
-- Custom JavaScript in `shopify.js` handles the Shopify integration
-- Includes system in `include.js` manages shared elements like headers and footers
-
-## Reliability and maintenance
-
-Use Node 24 or later. Shopify remains the product backend and checkout provider; the custom Webflow frontend and existing Shopify plan are retained.
-
-- Navigation uses relative static URLs; runtime product links resolve from the script location, including GitHub Pages project paths.
-- One cached Storefront catalogue supplies filtering, sorting and product types. Failed requests are retryable, and existing rendered content is preserved.
-- Product pages initialize Shopify Buy Buttons from their generated product ID. Purchase availability is shown by Shopify; initialization failures display a temporary-unavailability message.
-- The optional `SHOPIFY_BUY_SDK_TOKEN` repository secret overrides the public Storefront token for Buy Buttons. Never put an Admin token into browser config.
-- Without an Admin token, builds preserve existing policy pages. With one configured, policy fetch failures stop the build rather than publish sample text.
-- Shared navigation/footer regions are regenerated from `includes/` using explicit markers on every build.
-- `npm run build` validates credentials, generates content, and creates `dist/` from an explicit public-file allowlist. Only `dist/` is deployed. Ensure GitHub Pages publishes the `gh-pages` branch used by the workflow.
-- `npm run prepare:site` packages the checked-in pages without fetching Shopify content. `npm test` checks links, inline script syntax, request caching and failure handling against that artifact.
-
-The checked-in catalogue and homepage collection/category sections provide a browsing fallback during a temporary Storefront API outage. Images still use Shopify's CDN. The contact link uses the corrected brand spelling; mailbox delivery has not been verified.
+Both the project-path and domain-root builds are checked in CI. The GitHub Pages publication setting and any future Cloudflare deployment are separate from this migration branch.

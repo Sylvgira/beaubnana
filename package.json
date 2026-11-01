@@ -1,19 +1,15 @@
 {
   "name": "beau-banana",
   "version": "1.0.0",
-  "description": "Beau Banana Shopify Integration",
-  "main": "server.js",
+  "description": "Beaubnana Astro storefront with Shopify",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
-    "build:products": "node scripts/build-product-pages.js",
-    "build:policies": "node scripts/build-policy-pages.js",
-    "update:config": "node update-config.js",
-    "build:includes": "node scripts/include-common-elements.js",
-    "build:homepage": "node scripts/build-homepage.js",
-    "build": "npm run update:config && npm run build:includes && npm run build:products && npm run build:policies && npm run build:homepage && npm run build:includes && npm run prepare:site",
-    "prepare:site": "node scripts/prepare-site.js",
-    "test": "node --test tests/*.test.cjs"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "node --test tests/*.test.cjs",
+    "test:e2e": "playwright test"
   },
   "keywords": [
     "shopify",
@@ -22,11 +18,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^4.18.2",
-    "glob": "^14.0.3"
+    "astro": "7.4.4"
   },
   "engines": {
     "node": ">=24"
-  }
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.19.2",
+    "cheerio": "^1.2.0",
+    "typescript": "^6.0.3"
+  },
+  "type": "module"
 }

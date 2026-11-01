@@ -1,0 +1,10 @@
+---
+import type { Product } from '../lib/shopify';
+interface Props { product: Product }
+const { product } = Astro.props;
+const { amount, currencyCode } = product.priceRange.minVariantPrice;
+const compareAt = product.variants.edges[0]?.node.compareAtPrice?.amount;
+const onSale = compareAt && Number(compareAt) > Number(amount);
+---
+{onSale && <span style="text-decoration: line-through; opacity: .7; margin-right: .5rem;">{currencyCode} {Number(compareAt).toFixed(2)}</span>}
+<span>{currencyCode} {Number(amount).toFixed(2)}</span>

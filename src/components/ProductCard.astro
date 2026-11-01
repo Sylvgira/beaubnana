@@ -1,0 +1,21 @@
+---
+import type { Product } from '../lib/shopify';
+import { withBase } from '../lib/paths';
+import ProductPrice from './ProductPrice.astro';
+interface Props { product: Product; className?: string; tagText?: string }
+const { product, className = '', tagText = '' } = Astro.props;
+const [first, second = first] = product.images.edges.map(edge => edge.node);
+const tag = tagText || (product.tags.some(tag => tag.toLowerCase().replace(/[^a-z0-9]+/g, '-') === 'top-seller') ? 'best seller' : '');
+---
+<a href={withBase(`products/${product.handle}.html`)} data-product-handle={product.handle} class:list={['product-card_link w-inline-block', className]} role="listitem">
+  <div data-inner-rad="top-left" class="product-card_tag" style={tag ? '' : 'display: none;'}><p class="text-weight-bold">{tag}</p></div>
+  <div data-product-focus="" class="product-card_image-wrapper">
+    {second && <img src={second.url} alt={product.title} loading="lazy" class="product-card_image on-model" />}
+    {first && <img src={first.url} alt={product.title} loading="lazy" class="product-card_image product-focus" />}
+  </div>
+  <div data-inner-rad="bottom-left" class="product-card_detail-wrapper">
+    <h6 class="display-inline">{product.title}</h6>
+    <div class="spacer-0d25"></div>
+    <div class="product-price-wrapper text-size-large"><ProductPrice product={product} /></div>
+  </div>
+</a>

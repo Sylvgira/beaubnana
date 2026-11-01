@@ -1,0 +1,89 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import GlobalStyles from '../components/GlobalStyles.astro';
+import { withBase } from '../lib/paths';
+import { publicShopifyConfig } from '../lib/config';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  page?: 'home' | 'catalogue' | 'product';
+}
+const {
+  title,
+  description = 'Handmade crochet accessories combining bold colours, distinctive shapes and playful design.',
+  image = withBase('images/og.jpg'),
+  page,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const socialImage = new URL(image, Astro.site);
+const { storefront, buy } = publicShopifyConfig();
+const styles = ['normalize', 'components', 'ignite-project-starter-d09bc5786c3ea361', 'responsive-rem', 'spacing-overrides', 'font-overrides-typescales', 'grid', 'site', 'components-global', 'radii', 'themes', 'animations'];
+---
+<!doctype html>
+<html lang="en" class="w-mod-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <link rel="icon" href={withBase('images/faviconBB.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={withBase('images/webclipBB.png')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet" />
+    {styles.map(name => <link href={withBase(`css/${name}.css`)} rel="stylesheet" />)}
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <GlobalStyles />
+      <Header />
+      <main id="main" class="main-wrapper"><slot /></main>
+      <Footer />
+    </div>
+    {page && <script is:inline define:vars={{storefront, buy}}>
+      window.SHOPIFY_CONFIG = storefront;
+      window.SHOPIFY_BUY_CONFIG = buy;
+    </script>}
+    {page === 'product' && <script is:inline defer src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>}
+    {page && <script is:inline defer src={withBase('js/shopify.js')}></script>}
+    {page === 'catalogue' && <script is:inline defer src={withBase('js/ui.js')}></script>}
+    {page && <script is:inline define:vars={{page}}>
+      document.addEventListener('DOMContentLoaded', () => {
+        const api = window.ShopifyAPI;
+        if (page === 'home') {
+          Promise.allSettled([
+            api.displayCollectionMarquee('.collection_marquee-track', 'gid://shopify/Metaobject/138962501719'),
+            api.displayMarqueeProducts('.hero-cta_marquee-wrap .marquee-track', {limit:10}),
+            api.displayProductGrid('.top-sellers_card-wrapper', {limit:4,tag:'top-seller',tagText:'best seller'}),
+            api.displayProductTypeCollections(),
+          ]).then(results => results.forEach(result => {
+            if (result.status === 'rejected') console.error('Shopify section update failed', result.reason);
+          }));
+        } else if (page === 'catalogue') {
+          api.displayAllProducts();
+          api.initShopifyBuy().catch(console.error);
+        }
+      });
+    </script>}
+    {page === 'home' && <>
+      <script is:inline defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script is:inline defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+      <script is:inline defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+      <script is:inline defer src={withBase('js/animations.js')}></script>
+    </>}
+  </body>
+</html>

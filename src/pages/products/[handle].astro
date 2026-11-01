@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ProductDetails from '../../components/ProductDetails.astro';
+import { getShopData, type Product } from '../../lib/shopify';
+export async function getStaticPaths() {
+  const { products } = await getShopData();
+  return products.map(product => ({params:{handle:product.handle},props:{product}}));
+}
+interface Props { product: Product }
+const { product } = Astro.props;
+---
+<SiteLayout title={`${product.title} | Beaubnana`} description={product.description.slice(0,160)} image={product.images.edges[0]?.node.url} page="product">
+  <ProductDetails product={product} />
+</SiteLayout>

@@ -1,0 +1,143 @@
+---
+import type { Product } from '../lib/shopify';
+import ProductCard from './ProductCard.astro';
+interface Props { products: Product[] }
+const { products } = Astro.props;
+---
+
+        <section class="section_filters">
+          <div class="padding-global padding-section-large">
+            <div class="container-large">
+              <div class="product-list_header all">
+                <h1 class="heading-style-h2">
+                  <span>Shop </span><span data-category="all">all products</span>
+                </h1>
+                <div class="product-list_header-overlay"></div>
+              </div>
+
+              <div class="spacer-5"></div>
+              <div class="filter_component">
+                <div class="filter_layout">
+                  <div class="filter_filters-wrapper">
+                    <div fs-cmsfilter-element="filters" class="filter_form-block w-form">
+                      <form id="wf-form-Filter-7" name="wf-form-Filter-7" data-name="Filter" method="get" fs-cmsfilter-element="filters" class="filter_form" data-wf-page-id="67173f95a21c89acd4fc448a" data-wf-element-id="9a1879df-5246-fd2a-804e-f3ab6ca45352">
+                        <div class="filter_filters-header">
+                          <div class="filter_filters-header-left">
+                            <div class="filter_button-wrapper">
+                              <a data-w-id="9a1879df-5246-fd2a-804e-f3ab6ca45356" href="#" class="filter_filters-button w-inline-block">
+                                <div>Filter</div>
+                                <div class="dropdown-chevron w-embed">
+                                  <svg width=" 100%" height=" 100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                                  </svg>
+                                </div>
+                              </a>
+                              <div class="filter_filters-modal">
+                                <div class="filters_filter-group-list is-grid">
+                                  <div class="filter_filter-group">
+                                    <div class="filter_filter-group-heading">
+                                      <div class="text-size-medium text-weight-semibold">
+                                        Colour
+                                      </div>
+                                      <div class="button-group">
+                                        <a href="#" class="button is-link is-filter-clear">
+                                          <p class="button_text">Clear</p>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="filter_filter-options">
+                                      <div id="colour-filters" class="filter_list is-checkbox2">
+                                        <!-- Color filters will be populated by JS -->
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="filter_filter-group">
+                                    <div class="filter_filter-group-heading">
+                                      <div class="text-size-medium text-weight-semibold">
+                                        Type
+                                      </div>
+                                      <div class="button-group">
+                                        <a href="#" class="button is-link is-filter-clear">
+                                          <p class="button_text">Clear</p>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="filter_filter-options">
+                                      <div id="type-filters" class="filter_list">
+                                        <!-- Type filters will be populated by JS -->
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="filter_filter-group">
+                                    <div class="filter_filter-group-heading">
+                                      <div class="text-size-medium text-weight-semibold">
+                                        Collection
+                                      </div>
+                                      <div class="button-group">
+                                        <a href="#" class="button is-link is-filter-clear">
+                                          <p class="button_text">Clear</p>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div class="filter_filter-options">
+                                      <div id="collection-filters" class="filter_list">
+                                        <!-- Collection filters will be populated by JS -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="filter_modal-menu">
+                                  <button type="button" class="button is-small" id="apply-filters">
+                                    Apply
+                                  </button>
+                                  <div class="button-group align-right">
+                                    <a href="#" class="button is-link" id="clear-all-filters">
+                                      Clear all
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="dropdown_component">
+                              <button type="button" class="dropdown_toggle">
+                                <div>Sort by</div>
+                                <div class="dropdown-chevron w-embed">
+                                  <svg width=" 100%" height=" 100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                                  </svg>
+                                </div>
+                              </button>
+                              <nav class="dropdown_dropdown-list">
+                                <a href="#" class="dropdown_dropdown-link">Name: A to Z</a>
+                                <a href="#" class="dropdown_dropdown-link">Name: Z to A</a>
+                                <a href="#" class="dropdown_dropdown-link">Price: Low to High</a>
+                                <a href="#" class="dropdown_dropdown-link">Price: High to Low</a>
+                                <a href="#" class="dropdown_dropdown-link">Clear</a>
+                              </nav>
+                            </div>
+                          </div>
+                          <div class="filter_filters-header-right">
+                            <label class="filter_form-text-radio"><input type="radio" name="view-toggle" class="filter_form-text-radio-icon" checked="" value="product"><span class="filter_form-text-radio-label">Product</span></label><span>/</span><label class="filter_form-text-radio"><input type="radio" name="view-toggle" class="filter_form-text-radio-icon" value="on-model"><span class="filter_form-text-radio-label">On model</span></label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <!-- Filter tags wrapper moved here -->
+                    <div class="filter_tags-wrapper" style="display: none">
+                      <!-- Tags will be dynamically added here -->
+                    </div>
+                  </div>
+                  <div class="filter_feed">
+                    <div fs-cmsfilter-element="list" class="w-dyn-list">
+                      <div role="list" class="collection-list is-grid w-dyn-items">{products.map(product => <ProductCard product={product} />)}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>

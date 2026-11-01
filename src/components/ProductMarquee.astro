@@ -1,0 +1,14 @@
+---
+import type { Product } from '../lib/shopify';
+interface Props { products: Product[] }
+const { products } = Astro.props;
+---
+{[0,1,2].map(copy => (
+  <div class="marquee_list w-dyn-items" role="list" aria-hidden={copy > 0 ? 'true' : undefined}>
+    {products.map(product => product.images.edges[0] && (
+      <div class="marquee_item w-dyn-item" role="listitem">
+        <img src={product.images.edges[0].node.url} alt={product.title} loading="lazy" class="marquee_image scale-up" />
+      </div>
+    ))}
+  </div>
+))}

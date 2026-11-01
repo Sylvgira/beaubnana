@@ -1,0 +1,10 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../lib/paths';
+---
+<SiteLayout title="Protected page | Beaubnana">
+  <section class="padding-global padding-section-large"><div class="container-large">
+    <h1 class="heading-style-h2">Protected page</h1><div class="spacer-2"></div>
+    <a class="button w-inline-block" href={withBase('index.html')}>Return home</a>
+  </div></section>
+</SiteLayout>

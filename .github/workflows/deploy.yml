@@ -26,6 +26,9 @@ jobs:
       - name: Install Dependencies
         run: npm ci
         if: hashFiles('package.json') != ''
+
+      - name: Check Astro
+        run: npm run check
         
       - name: Build Site
         run: npm run build
@@ -33,7 +36,8 @@ jobs:
           SHOPIFY_STORE_NAME: ${{ vars.SHOPIFY_STORE_NAME }}
           SHOPIFY_STOREFRONT_TOKEN: ${{ secrets.SHOPIFY_STOREFRONT_TOKEN }}
           SHOPIFY_BUY_SDK_TOKEN: ${{ secrets.SHOPIFY_BUY_SDK_TOKEN }}
-          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+          SHOPIFY_DATA_SOURCE: live
+          ASTRO_TELEMETRY_DISABLED: '1'
 
       - name: Regression checks
         run: npm test

@@ -1,0 +1,121 @@
+---
+import { withBase } from '../lib/paths';
+import type { Product } from '../lib/shopify';
+import ProductCard from './ProductCard.astro';
+import ProductMarquee from './ProductMarquee.astro';
+interface Props { products: Product[] }
+const { products } = Astro.props;
+const featuredProducts = products.filter(product => product.tags.some(tag => tag.toLowerCase().replace(/[^a-z0-9]+/g, '-') === 'top-seller')).slice(0,4);
+---
+
+        <section class="section_hero">
+          <div class="hero_bg">
+            <img src={withBase("images/3O7A6577.jpg")} loading="eager" alt="Colourful handmade Beaubnana crochet bags" class="hero_bg-image" fetchpriority="high">
+          </div>
+          <div data-inner-rad="bottom-right" class="hero_cta radius-custom">
+            <div class="hero-cta_inner">
+              <a href={withBase("all-products.html")} class="hero-cta_link w-inline-block" aria-label="Browse the collection"></a>
+              <p class="heading-style-h6">Shop New</p>
+              <div class="hero-cta_marquee-wrap">
+                <div class="marquee-track"><ProductMarquee products={products.slice(0, 10)} /></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_top-sellers">
+          <div class="padding-global padding-section-medium">
+            <div class="container-large">
+              <div class="top-sellers_component">
+                <div class="top-sellers_top">
+                  <h3>Top sellers</h3>
+                  <div class="button-group">
+                    <a href={withBase("all-products.html")} class="button w-inline-block">
+                      <p class="button_text">
+                        Shop now
+                      </p>
+                      <div class="button_dot"></div>
+                    </a>
+                  </div>
+                </div>
+                <div class="spacer-2"></div>
+
+                <div role="list" class="top-sellers_card-wrapper is-grid w-dyn-items">{featuredProducts.map(product => <ProductCard product={product} className="is-grid-column-quarter inset-effect" tagText="best seller" />)}</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section_story">
+          <div class="story_component padding-section-large inset-effect">
+            <div class="story_content">
+              <p class="heading-style-h6">Our Story</p>
+              <div class="spacer-3"></div>
+              <span data-scrub-text="" class="intro-text_text">
+                <h1 style="all: inherit">
+                  Beaubnana is an independent brand focused on fashionable
+                  handmade crochet.
+                </h1>
+                By utilising bold colour combinations and distinctive shapes, we
+                transform intangible thoughts into wearable art.
+              </span>
+            </div>
+          </div>
+        </section>
+        <section style="--collection-color: #f36426" class="section_collections padding-global">
+          <div class="container-large">
+            <div class="collection_image-wrap">
+              <img src="https://cdn.shopify.com/s/files/1/0628/9470/2679/files/12313.jpg?v=1745724054" loading="lazy" alt="Smiley Face" style="background-color: var(--collection-color)" class="collection_image">
+              <div class="collection_marquee">
+                <div style="--color--elements--shadow: black" class="collection_marquee-track"><ProductMarquee products={products.filter(product => ["loving-smiley-face-hairband","loving-smiling-face-necklace","smiley-face-earrings-grn","smiley-face-earrings-pnk","smiley-face-earrings-ylw","smiling-dog-earrings","smiling-heart-earrings","super-sweet-heart-earrings","sweet-heart-earrings"].includes(product.handle))} /></div>
+              </div>
+            </div>
+            <div class="collection_component is-grid">
+              <div class="collection_content is-grid-column-custom">
+                <h2 style="color: var(--collection-color)" class="collection_heading">Smiley Face</h2>
+                <div class="spacer-1"></div>
+                <p class="text-size-large">The Smiley Face Collection features handcrafted accessories that radiate warmth and positivity. Each piece is designed with vibrant yarns and cheerful motifs to remind you, even on tough days, that “Everything will be ok.” Add a touch of joy to your wardrobe with these playful, uplifting designs.</p>
+                <div class="spacer-2"></div>
+                <a href={withBase("all-products.html?collection=smiley-face")} class="button w-inline-block background-color-collection">
+                  <p class="button_text">
+                    Shop Collection
+                  </p>
+                  <div class="button_dot"></div>
+                </a>
+                <div class="inner-radius collection-bottom-left"></div>
+                <div class="inner-radius collection-bottom-right"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-theme="alternate" class="section_categories-feature padding-global padding-section-large">
+          <div class="container-large">
+            <div class="categories-feature_card-wrapper is-grid"><a class="categories-feature_card inset-effect" href={withBase("all-products.html?type=types-qzcd0dqw")} data-image-hover="">
+                <div data-inner-rad="top-left" class="categories-feature_detail-wrapper">
+                  <h5 class="heading-style-h4">Hairbands</h5>
+                </div>
+                <div class="categories-feature_image-wrapper">
+                  <img src="https://cdn.shopify.com/s/files/1/0628/9470/2679/files/2H5A2041.jpg?v=1745725264" loading="lazy" alt="Hairbands" class="categories-feature_image">
+                </div>
+              </a><a class="categories-feature_card inset-effect" href={withBase("all-products.html?type=necklaces")} data-image-hover="">
+                <div data-inner-rad="top-left" class="categories-feature_detail-wrapper">
+                  <h5 class="heading-style-h4">Necklaces</h5>
+                </div>
+                <div class="categories-feature_image-wrapper">
+                  <img src="https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67272279ad182a3247f87399_3.jpg?v=1745718973" loading="lazy" alt="Necklaces" class="categories-feature_image">
+                </div>
+              </a><a class="categories-feature_card inset-effect" href={withBase("all-products.html?type=bags")} data-image-hover="">
+                <div data-inner-rad="top-left" class="categories-feature_detail-wrapper">
+                  <h5 class="heading-style-h4">Bags</h5>
+                </div>
+                <div class="categories-feature_image-wrapper">
+                  <img src="https://cdn.shopify.com/s/files/1/0628/9470/2679/files/13130.jpg?v=1745718553" loading="lazy" alt="Bags" class="categories-feature_image">
+                </div>
+              </a><a class="categories-feature_card inset-effect" href={withBase("all-products.html?type=earrings")} data-image-hover="">
+                <div data-inner-rad="top-left" class="categories-feature_detail-wrapper">
+                  <h5 class="heading-style-h4">Earrings</h5>
+                </div>
+                <div class="categories-feature_image-wrapper">
+                  <img src="https://cdn.shopify.com/s/files/1/0628/9470/2679/files/67270c5a6ebda18a3ecc6f67_1.jpg?v=1745718648" loading="lazy" alt="Earrings" class="categories-feature_image">
+                </div>
+              </a></div>
+          </div>
+        </section>
