@@ -15,6 +15,24 @@ console.log(`Using Shopify domain: ${SHOPIFY_CONFIG.domain}`);
 console.log(`Storefront token available: ${SHOPIFY_CONFIG.storefrontAccessToken ? 'Yes' : 'No'}`);
 console.log(`Admin token available: ${SHOPIFY_CONFIG.adminApiAccessToken ? 'Yes' : 'No'}`);
 
+// Admin policy bodies can contain Liquid placeholders. Storefront returns the
+// same policies rendered with the shop's actual settings and privacy links.
+async function fetchRenderedPolicies() {
+    const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2026-10/graphql.json`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Shopify-Storefront-Access-Token': SHOPIFY_CONFIG.storefrontAccessToken
+        },
+        body: JSON.stringify({query: '{ shop { privacyPolicy { body } refundPolicy { body } shippingPolicy { body } termsOfService { body } } }'}),
+        signal: AbortSignal.timeout(15000)
+    });
+    if (!response.ok) throw new Error(`Rendered policy request failed: ${response.status}`);
+    const result = await response.json();
+    if (result.errors || !result.data?.shop) throw new Error('Invalid rendered policy response');
+    return result.data.shop;
+}
+
 // Function to make a request to the Shopify Admin API
 function fetchFromShopifyAdmin(endpoint) {
     return new Promise((resolve, reject) => {
@@ -66,7 +84,10 @@ async function fetchPolicies() {
     try {
         // Fetch all shop policies using the correct endpoint
         console.log('Attempting to fetch policies from Shopify Admin API...');
-        const shopPolicies = await fetchFromShopifyAdmin('policies.json');
+        const [shopPolicies, rendered] = await Promise.all([
+            fetchFromShopifyAdmin('policies.json'),
+            fetchRenderedPolicies()
+        ]);
         
         if (!shopPolicies || !shopPolicies.policies) {
             throw new Error('Invalid policy response; existing policies were preserved.');
@@ -96,10 +117,20 @@ async function fetchPolicies() {
                             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                             .join(' ');
             
+            const field = {
+                'privacy-policy': 'privacyPolicy',
+                'refund-policy': 'refundPolicy',
+                'shipping-policy': 'shippingPolicy',
+                'terms-of-service-policy': 'termsOfService'
+            }[handle];
+            const body = field ? rendered[field]?.body : policy.body;
+            if (!body || /\{[{%]/.test(body)) {
+                throw new Error(`Policy ${handle} was not fully rendered; refusing to publish placeholders`);
+            }
             return {
                 type: policy.policy_type,
                 title: title,
-                body: policy.body,
+                body,
                 handle: handle
             };
         });
