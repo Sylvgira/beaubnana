@@ -59,7 +59,7 @@ The browser Shopify integration is retained as a classic script to keep its work
 
 ## Hosting
 
-Production is Cloudflare Pages at **https://beaubnana.pages.dev**. The default Astro build uses `BASE_PATH=/` and that origin. Only `dist/` is uploaded; no server adapter or runtime backend is needed.
+Production is Cloudflare Pages at **https://bibeau.com.au**. The default Astro build uses `BASE_PATH=/` and that origin. Only `dist/` is uploaded; no server adapter or runtime backend is needed.
 
 The initial migration uses Direct Upload because Cloudflare returned an error for the account's GitHub installation. Automatic deployments are not connected. For an authenticated account, publish a fresh live build with:
 
@@ -71,6 +71,6 @@ npx wrangler pages deploy dist --project-name beaubnana --branch main
 
 Set the two Shopify environment variables described above before the live build. `wrangler.jsonc` records the project name and output directory. Use the existing Cloudflare account (`6059774b3388c84bc8a50de5f3e86bd4`); never commit Cloudflare credentials.
 
-To enable automatic builds later, repair the Cloudflare Pages GitHub installation and connect `Sylvgira/beaubnana`, production branch `main`, build command `npm run check && npm run build && npm test`, output `dist`, Node 24, `BASE_PATH=/`, `SITE_URL=https://beaubnana.pages.dev`, and the Shopify live-build variables. CI currently checks both hosting paths on PRs and main pushes; it does not publish.
+To enable automatic builds later, repair the Cloudflare Pages GitHub installation and connect `Sylvgira/beaubnana`, production branch `main`, build command `npm run check && npm run build && npm test`, output `dist`, Node 24, `BASE_PATH=/`, `SITE_URL=https://bibeau.com.au`, and the Shopify live-build variables. CI currently checks both hosting paths on PRs and main pushes; it does not publish.
 
 The old GitHub Pages deployment workflow has been removed. Repository-root redirect pages send the old project URL and deep links to Cloudflare, preserving query strings and fragments. They are not included in the Cloudflare artifact. A legacy project-path build is still available with `BASE_PATH=/beaubnana SITE_URL=https://sylvgira.github.io npm run build`.

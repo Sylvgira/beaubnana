@@ -7,6 +7,6 @@ This is an Astro static storefront retaining the Webflow visual design and Shopi
 
 Use src/components for shared markup, src/layouts for the HTML shell, and src/pages for routes. Products and policies are generated with getStaticPaths; retain the existing .html URLs. Do not reintroduce generated source HTML or string-replacement build scripts.
 
-Read README.md and docs/astro-migration.md for data-source and hosting configuration. Build-time data uses Storefront only; Admin tokens must never enter browser configuration. The default base is / for Cloudflare Pages at beaubnana.pages.dev. BASE_PATH=/beaubnana remains supported for legacy builds. Repository-root index.html and 404.html are only redirects for the old GitHub Pages host.
+Read README.md and docs/astro-migration.md for data-source and hosting configuration. Build-time data uses Storefront only; Admin tokens must never enter browser configuration. The default base is / for Cloudflare Pages at bibeau.com.au. BASE_PATH=/beaubnana remains supported for legacy builds. Repository-root index.html and 404.html are only redirects for the old GitHub Pages host.
 
 Run npm run check, npm run build, npm test and relevant browser checks after changes. Deploy only dist/. Publishing and the later Cloudflare move require explicit user instructions; a code edit does not authorize deployment.
