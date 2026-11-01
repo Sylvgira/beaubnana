@@ -77,6 +77,7 @@ function fetchFromShopify(query) {
                 }
             });
         });
+        req.setTimeout(15000, () => req.destroy(new Error('Shopify request timed out')));
         req.on('error', (error) => {
             reject(error);
         });
@@ -91,12 +92,12 @@ async function fetchHomepageProducts() {
         const response = await fetchFromShopify(HOMEPAGE_PRODUCTS_QUERY);
         if (!response.data || !response.data.products) {
             console.error('[Homepage Build] Invalid response structure from Shopify:', response);
-            return [];
+            throw new Error("Homepage product request failed");
         }
         return response.data.products.edges.map(edge => edge.node);
     } catch (error) {
         console.error('[Homepage Build] Error fetching homepage products:', error);
-        return [];
+        throw new Error("Homepage product request failed");
     }
 }
 
@@ -138,7 +139,7 @@ async function buildHomepage() {
 
     const products = await fetchHomepageProducts();
     if (!products || products.length === 0) {
-        console.warn('[Homepage Build] No products fetched for the homepage. index.html will not be modified for products.');
+        throw new Error('No homepage products; existing content was preserved.');
         // Optionally, clear out the section if no products are found or leave existing placeholders
         // For now, we'll just not add new products.
     }
@@ -173,7 +174,7 @@ async function buildHomepage() {
                  console.log('[Homepage Build] index.html updated successfully using fallback replacement!');
             } else if (products && products.length > 0) {
                  console.error('[Homepage Build] Fallback replacement also failed. index.html not modified.');
-                 return; // Stop if markers aren't found and fallback won't work
+                 throw new Error('Homepage markers missing');
             } else {
                 // If no products, and markers not found, we might want to clear the area or log that nothing was done.
                 // For now, just log that no products were added and markers were an issue.
@@ -190,9 +191,9 @@ async function buildHomepage() {
 
     } catch (error) {
         console.error('[Homepage Build] Error processing index.html:', error);
-        return; // Ensure we exit if there's a file processing error
+        throw error;
     }
      console.log('[Homepage Build] Homepage build process finished.');
 }
 
-buildHomepage(); 
+buildHomepage().catch(error => { console.error(error); process.exitCode = 1; });
