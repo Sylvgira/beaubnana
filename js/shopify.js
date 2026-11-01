@@ -19,9 +19,29 @@ let shopifyInitializationPromise = null; // To track initialization state
 // ---------------------------------------------------------------
 
 // GraphQL query to fetch products with their variants and images
+
+// Resolve paths from this script, for both a Pages project and a domain root.
+const SITE_BASE_PATH = new URL(document.currentScript.src).pathname.replace(/\/js\/[^/]+$/, '');
+const storefrontRequests = new Map();
+let currentSort = 'clear';
+async function storefrontFetch(url, options) {
+    const key = url + options.body;
+    if (!storefrontRequests.has(key)) {
+        const request = fetch(url, { ...options, signal: AbortSignal.timeout(15000) })
+            .then(async response => {
+                if (!response.ok) throw new Error(`Shopify request failed: ${response.status}`);
+                const data = await response.clone().json();
+                if (data.errors) throw new Error('Shopify could not load this content');
+                return response;
+            }).catch(error => { storefrontRequests.delete(key); throw error; });
+        storefrontRequests.set(key, request);
+    }
+    return (await storefrontRequests.get(key)).clone();
+}
+
 const PRODUCTS_QUERY = `
     query {
-        products(first: 50) {
+        products(first: 250) {
             edges {
                 node {
                     id
@@ -30,6 +50,7 @@ const PRODUCTS_QUERY = `
                     handle
                     tags
                     productType
+                    metafield(namespace: "shopify", key: "color-pattern") { value }
                     priceRange {
                         minVariantPrice {
                             amount
@@ -121,7 +142,7 @@ async function fetchProductsByTag(tag, limit = 50) {
             }
         `;
 
-        const response = await fetch(`https://${window.SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${window.SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -154,7 +175,7 @@ async function fetchProducts() {
         const fetchUrl = `https://${window.SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`;
 
         
-        const response = await fetch(fetchUrl, {
+        const response = await storefrontFetch(fetchUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -241,7 +262,7 @@ async function fetchProductByHandle(handle) {
             }
         `;
 
-        const response = await fetch(`https://${window.SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${window.SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -265,22 +286,9 @@ async function fetchProductByHandle(handle) {
 }
 
 // Shared function to fetch products with optional filters
-async function fetchProductsWithFilters(filters = {}) {
-    // If tag filter is provided, use tag-based query
-    if (filters.tag) {
-        const taggedProducts = await fetchProductsByTag(filters.tag);
-        return filters.limit ? taggedProducts.slice(0, filters.limit) : taggedProducts;
-    }
-    
-    // Otherwise use regular products query
-    let products = await fetchProducts();
-    
-    // Apply filters if provided
-    if (filters.limit) {
-        products = products.slice(0, filters.limit);
-    }
-    
-    return products;
+async function fetchProductsWithFilters({limit = 50, tag = null} = {}) {
+    const products = await fetchProducts();
+    return products.filter(product => !tag || product.tags.includes(tag)).slice(0, limit);
 }
 
 // Function to display products in a marquee
@@ -311,7 +319,7 @@ async function displayMarqueeProducts(selector, options = {}) {
 
     if (products.length === 0) {
         console.warn(`[displayMarqueeProducts] No products found to display.`);
-        marqueeTrack.innerHTML = ''; // Clear track even if no products
+        // Keep the existing marquee while Shopify is unavailable.
         return;
     }
 
@@ -342,6 +350,7 @@ async function displayMarqueeProducts(selector, options = {}) {
     });
 
 
+    if (!products.length) return;
     // Clear existing content and add the marquee list three times for seamless looping
     marqueeTrack.innerHTML = '';
 
@@ -364,7 +373,7 @@ async function displayProductGrid(selector, options = {}) {
         tag: options.tag || null 
     });
     
-    // Clear existing items
+    if (!products.length) return; // Keep the rendered fallback during an outage.
     grid.innerHTML = '';
 
     products.forEach(product => {
@@ -372,7 +381,7 @@ async function displayProductGrid(selector, options = {}) {
             showTag: true,
             tagText: options.tagText || '',
             additionalClasses: 'is-grid-column-quarter inset-effect',
-            basePath: ''
+            basePath: SITE_BASE_PATH
         });
         grid.appendChild(productCard);
     });
@@ -407,7 +416,7 @@ async function fetchProductsFromCollection(collectionHandle) {
             }
         `;
         
-        const metadataResponse = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const metadataResponse = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -792,6 +801,7 @@ async function displayCollectionMarquee(selector, collectionHandle) {
         console.warn('No products available for the marquee');
     }
 
+    if (!products.length) return;
     // Clear existing content and add the marquee list three times for seamless looping
     marqueeTrack.innerHTML = '';
     for (let i = 0; i < 3; i++) {
@@ -850,6 +860,7 @@ async function displayProductTypeCollections() {
 
     // Fetch product type categories
     const typeCategories = await fetchProductTypeCategories();
+    if (!typeCategories.length) return;
 
 
     // Clear existing content but keep the template
@@ -962,35 +973,8 @@ function initializeSorting() {
             // Close dropdown
             dropdownList.classList.remove('is-open');
             
-            // Get current products
-            const products = await fetchProducts();
-            
-            // Sort products
-            const sortedProducts = sortProducts(products, sortOption);
-            
-            // Re-display products
-            const filterFeed = document.querySelector('.filter_feed .collection-list');
-            if (!filterFeed) return;
-            
-            // Clear existing items
-            filterFeed.innerHTML = '';
-            
-            // Display sorted products
-            sortedProducts.forEach(product => {
-                const productCard = createProductCard(product, {
-                    showTag: true,
-                    basePath: '',
-                    onClick: (product) => {
-
-                        if (window.productRouter) {
-                            window.productRouter.navigateToProduct(product.handle);
-                        } else {
-                            console.error('Product router not initialized');
-                        }
-                    }
-                });
-                filterFeed.appendChild(productCard);
-            });
+            currentSort = sortOption;
+            await applyFilters();
         });
     });
 }
@@ -1024,7 +1008,7 @@ async function fetchProductColors() {
     `;
 
     try {
-        const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -1273,7 +1257,7 @@ async function fetchTypesFromMetaobject() {
         `;
 
         // ... (rest of fetch logic remains the same until processing metaobjects) ...
-         const initialResponse = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+         const initialResponse = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -1372,7 +1356,7 @@ async function fetchTypesFromMetaobject() {
             }
         `;
         // ... (rest of nodes fetch and processing remains similar, just for MediaImage) ...
-         const nodesResponse = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+         const nodesResponse = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -1507,75 +1491,8 @@ async function applyFilters() {
     });
     
     try {
-        // Build the GraphQL query - NO server-side filters needed initially anymore
-        // We fetch all (or a large number) and filter everything client-side
-        const query = `
-            query {
-                products(first: 250) {
-                    edges {
-                        node {
-                            id
-                            title
-                            handle
-                            tags
-                            productType 
-                            priceRange {
-                                minVariantPrice {
-                                    amount
-                                    currencyCode
-                                }
-                            }
-                            images(first: 10) {
-                                edges {
-                                    node {
-                                        url
-                                        altText
-                                    }
-                                }
-                            }
-                            variants(first: 1) {
-                                edges {
-                                    node {
-                                        id
-                                        price {
-                                            amount
-                                            currencyCode
-                                        }
-                                        compareAtPrice {
-                                            amount
-                                            currencyCode
-                                        }
-                                    }
-                                }
-                            }
-                            metafield(namespace: "shopify", key: "color-pattern") {
-                                value
-                            }
-                        }
-                    }
-                }
-            }
-        `;
-
-
-        const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-Shopify-Storefront-Access-Token': SHOPIFY_CONFIG.storefrontAccessToken
-            },
-            body: JSON.stringify({ query })
-        });
-
-        const data = await response.json();
-        if (data.errors) {
-            console.error('[applyFilters] GraphQL errors:', data.errors);
-            displayFilteredProducts([]);
-            return;
-        }
-
-        let products = data.data.products.edges.map(edge => edge.node);
-
+        let products = await fetchProducts();
+        if (!products.length) return; // Preserve the last successful view on failure.
 
         // Apply collection filter using productGids from stored metaobject data (client-side)
         if (selectedCollectionValue !== 'all') {
@@ -1630,7 +1547,7 @@ async function applyFilters() {
         }
 
         // Re-render products
-        displayFilteredProducts(products);
+        displayFilteredProducts(sortProducts(products, currentSort));
 
     } catch (error) {
         console.error('[applyFilters] Error applying filters:', error);
@@ -1978,7 +1895,7 @@ function createFilterTags(selectedColors, selectedTypeValue, selectedTypeLabel, 
         tag.innerHTML = `
             <span class="filter_tag-color" style="background-color: ${color.color}"></span>
             <span class="filter_tag-text">${color.label}</span>
-            <span class="filter_tag-remove">✕</span>
+            <button type="button" class="filter_tag-remove" aria-label="Remove filter">✕</button>
         `;
         
         // Add click handler to remove tag
@@ -2011,7 +1928,7 @@ function createFilterTags(selectedColors, selectedTypeValue, selectedTypeLabel, 
         tag.setAttribute('data-filter-value', selectedTypeValue);
         tag.innerHTML = `
             <span class="filter_tag-text">Type: ${selectedTypeLabel}</span>
-            <span class="filter_tag-remove">✕</span>
+            <button type="button" class="filter_tag-remove" aria-label="Remove filter">✕</button>
         `;
         
         // Add click handler to remove tag
@@ -2044,7 +1961,7 @@ function createFilterTags(selectedColors, selectedTypeValue, selectedTypeLabel, 
         tag.setAttribute('data-filter-value', selectedCollectionValue);
         tag.innerHTML = `
             <span class="filter_tag-text">Collection: ${selectedCollectionLabel}</span>
-            <span class="filter_tag-remove">✕</span>
+            <button type="button" class="filter_tag-remove" aria-label="Remove filter">✕</button>
         `;
         
         // Add click handler to remove tag
@@ -2354,7 +2271,7 @@ async function initProductBuyButton(productId) {
         // --- REVERT TO ORIGINAL COMPLEX OPTIONS --- 
         // These match closer to the user's example and config.js defaults
 
-        shopifyUi.createComponent("product", {
+        await shopifyUi.createComponent("product", {
             id: productIdToUse, // This should now be the numeric ID
             node: productComponentNode,
             moneyFormat: window.SHOPIFY_BUY_CONFIG.moneyFormat,
@@ -2372,27 +2289,7 @@ async function initProductBuyButton(productId) {
                              "margin-top": "0", // Keep our wrapper style adjustments
                              "padding-top": "0",
                          },
-                        button: { 
-                            // --- Make button invisible but clickable ---
-                            "opacity": 0,
-                            "background-color": "transparent",
-                            "color": "transparent", // Hide text color
-                            "border": "none", // Remove any border
-                            ":hover": {
-                                "background-color": "transparent" // Keep transparent on hover
-                            },
-                            ":focus": {
-                                "background-color": "transparent", // Keep transparent on focus
-                                "outline": "none" // Hide focus ring if possible
-                            },
-                             // --- Ensure it fills the container ---
-                            "width": "100%", 
-                            "height": "100%",
-                            "padding": "0", // Remove padding to maximize clickable area
-                            "font-size": "1px", // Make text tiny just in case
-                            "cursor": "pointer", // Explicitly set cursor
-                            // No border-radius needed for the invisible overlay button
-                        },
+                        button: window.SHOPIFY_BUY_CONFIG.buttonStyles,
                     },
                     contents: { // Keep hidden as per original logic
                         img: false,
@@ -2472,7 +2369,7 @@ async function initProductBuyButton(productId) {
 
     } catch (error) {
         // Log the specific error encountered during initialization
-        console.error(`❌ Error initializing product buy button for ID ${productId}:`, error);
+        throw error;
     }
 }
 
@@ -2581,7 +2478,7 @@ async function displayCollectionGrid(selector, collectionHandle, options = {}) {
             showTag: true,
             tagText: options.tagText || '',
             additionalClasses: 'is-grid-column-quarter inset-effect',
-            basePath: ''
+            basePath: SITE_BASE_PATH
         });
         
         productCard.setAttribute('role', 'listitem');
@@ -2610,7 +2507,7 @@ async function debugCollectionsMetaobjects() {
             }
         `;
         
-        const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -2682,7 +2579,7 @@ async function debugCollectionByHandle(handle) {
             }
         `;
         
-        const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -2804,7 +2701,7 @@ async function fetchSingleMetaobjectById(metaobjectId) {
     `;
 
     try {
-        const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -2896,7 +2793,7 @@ async function fetchReferencedProducts(productIds) {
     `;
 
     try {
-        const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -2943,7 +2840,7 @@ async function fetchCollectionDataByGid(metaobjectId) {
     
     if (!metaobject) {
         console.error(`Failed to fetch metaobject with ID: ${metaobjectId}`);
-        return { collection: {}, products: [] }; // Return default structure on failure
+        return { collection: null, products: [] }; // Return default structure on failure
     }
     
     // Extract basic fields
@@ -3120,6 +3017,7 @@ async function displayCollectionMarquee(selector, collectionMetaobjectId) { // E
         console.warn('No products available for the marquee');
     }
 
+    if (!products.length) return;
     // Clear existing content and add the marquee list three times
     marqueeTrack.innerHTML = '';
     for (let i = 0; i < 3; i++) {
@@ -3169,7 +3067,7 @@ async function listAllMetaobjects() {
     `;
     
     try {
-        const response = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const response = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -3254,7 +3152,7 @@ async function fetchCollectionsFromMetaobject() {
             }
         `;
         
-        const initialResponse = await fetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
+        const initialResponse = await storefrontFetch(`https://${SHOPIFY_CONFIG.domain}/api/2024-01/graphql.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -3366,7 +3264,7 @@ function createProductCard(product, options = {}) {
 
     // Create the product card element
     const productCard = document.createElement('a');
-    productCard.href = `${basePath}/products/${product.handle}`;
+    productCard.href = `${SITE_BASE_PATH}/products/${product.handle}.html`;
     productCard.setAttribute('data-product-handle', product.handle);
     productCard.className = `product-card_link w-inline-block ${additionalClasses}`.trim();
     
@@ -3374,11 +3272,11 @@ function createProductCard(product, options = {}) {
     let priceHtml = '';
     if (hasCompareAtPrice) {
         priceHtml = `
-            <p data-commerce-type="variation-compare-at-price" class="text-size-large display-inline" style="text-decoration: line-through; opacity: 0.7; margin-right: 0.5rem;">${currency} ${compareAtPrice}</p>
-            <p data-commerce-type="variation-price" class="text-size-large display-inline">${currency} ${price}</p>
+            <p data-commerce-type="variation-compare-at-price" class="text-size-large display-inline" style="text-decoration: line-through; opacity: 0.7; margin-right: 0.5rem;">${currency} ${Number(compareAtPrice).toFixed(2)}</p>
+            <p data-commerce-type="variation-price" class="text-size-large display-inline">${currency} ${Number(price).toFixed(2)}</p>
         `;
     } else {
-        priceHtml = `<p data-commerce-type="variation-price" class="text-size-large display-inline">${currency} ${price}</p>`;
+        priceHtml = `<p data-commerce-type="variation-price" class="text-size-large display-inline">${currency} ${Number(price).toFixed(2)}</p>`;
     }
 
     productCard.innerHTML = `
@@ -3404,13 +3302,33 @@ function createProductCard(product, options = {}) {
         </div>
     `;
 
-    // Add click handler if provided
-    if (onClick) {
-        productCard.addEventListener('click', (e) => {
-            e.preventDefault();
-            onClick(product);
-        });
-    }
+    // Use native links so back/forward, new tabs and direct URLs all work.
 
     return productCard;
 }
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const node = document.querySelector('.product-header_sticky #product-component[data-shopify-id]');
+    if (!node) return;
+    let initializationTimeout;
+    try {
+        await Promise.race([initProductBuyButton(node.dataset.shopifyId.split('/').pop()), new Promise((_,reject) => { initializationTimeout = setTimeout(() => reject(new Error('Purchase initialization timed out')),20000); })]).finally(() => clearTimeout(initializationTimeout));
+        await new Promise((resolve, reject) => {
+            if (node.querySelector('iframe')) return resolve();
+            const observer = new MutationObserver(() => {
+                if (node.querySelector('iframe')) { clearTimeout(timer); observer.disconnect(); resolve(); }
+            });
+            observer.observe(node, {childList:true, subtree:true});
+            const timer = setTimeout(() => { observer.disconnect(); reject(new Error('Purchase control unavailable')); }, 15000);
+        });
+        const wrapper = node.closest('.button');
+        wrapper.className = 'shopify-purchase-control';
+        wrapper.querySelectorAll('.button_text, .button_dot').forEach(label => label.remove());
+        node.style.position = 'static';
+    } catch (error) {
+        const message = document.createElement('p');
+        message.setAttribute('role', 'status');
+        message.textContent = 'Purchasing is temporarily unavailable. Please try again later.';
+        node.closest('.button').replaceWith(message);
+    }
+});

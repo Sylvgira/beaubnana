@@ -167,3 +167,8 @@ a,
 html.wf-design-mode .hide-in-designer {
 	display: none;
 }
+/* Keep keyboard focus visible while preserving the existing visual design. */
+:focus-visible { outline: 3px solid #4a376c; outline-offset: 4px; }
+.filter_tag-remove { background: transparent; border: 0; color: inherit; cursor: pointer; font: inherit; }
+.filter_form-radio1:has(input:focus-visible), .filter_form-checkbox2:has(input:focus-visible) { outline: 3px solid #4a376c; outline-offset: 3px; }
+.button:has(.shopify-button-wrapper iframe):focus-within { outline: 3px solid #4a376c; outline-offset: 4px; }
