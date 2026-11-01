@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open `http://localhost:4321/beaubnana/`. Development and preview support the existing `.html` links. A checked-in public Shopify snapshot lets the site build without credentials; the browser continues to use the existing public Storefront and Buy Button configuration.
+Open `http://localhost:4321/`. Development and preview support the existing `.html` links. A checked-in public Shopify snapshot lets the site build without credentials; the browser continues to use the existing public Storefront and Buy Button configuration.
 
 To build fresh product and policy pages, copy `.env.example` to `.env` and set both `SHOPIFY_STORE_NAME` and `SHOPIFY_STOREFRONT_TOKEN`. The optional `SHOPIFY_BUY_SDK_TOKEN` overrides the public token used for purchase controls. No Admin API token is needed.
 
@@ -53,20 +53,24 @@ tests/
   fixtures/        Recorded public Storefront data and an isolated Buy Button double
 ```
 
-Astro generates the existing 55 public pages, including all 46 product URLs. `build.format: 'file'` keeps `/all-products.html`, `/products/<handle>.html`, and `/policies/<handle>.html` working. Shared elements are Astro components; there are no string-replacement HTML generators or Express server.
+Astro generates the existing 55 public pages, including all 46 product URLs. `build.format: 'file'` keeps `/all-products.html`, `/products/<handle>.html`, and `/policies/<handle>.html` working. Shared elements are Astro components; there are no string-replacement HTML generators or Express server. The repository-root `index.html` and `404.html` only redirect the former GitHub Pages URL; Astro builds the real site from `src/pages/`.
 
 The browser Shopify integration is retained as a classic script to keep its working SDK and filter behaviour stable. It resolves the hosting base from its own script URL, deduplicates Storefront reads, and preserves pre-rendered content during API failures. Images continue to use Shopify's CDN.
 
 ## Hosting
 
-The default build uses `BASE_PATH=/beaubnana` and `SITE_URL=https://sylvgira.github.io` for the existing GitHub Pages URL. The deployment workflow builds fresh Shopify content, runs checks, and publishes only `dist/` to `gh-pages`. GitHub Pages must publish that branch rather than the raw Astro source on `main`.
+Production is Cloudflare Pages at **https://beaubnana.pages.dev**. The default Astro build uses `BASE_PATH=/` and that origin. Only `dist/` is uploaded; no server adapter or runtime backend is needed.
 
-For a later domain-root host such as Cloudflare, use:
+The initial migration uses Direct Upload because Cloudflare returned an error for the account's GitHub installation. Automatic deployments are not connected. For an authenticated account, publish a fresh live build with:
 
 ```sh
-BASE_PATH=/ SITE_URL=https://your-domain.example npm run build
+SHOPIFY_DATA_SOURCE=live npm run build
+npm test
+npx wrangler pages deploy dist --project-name beaubnana --branch main
 ```
 
-Upload the generated `dist/` directory. The app uses static output and needs no server adapter, Worker, runtime database, or deployment credentials to build the migration. No Cloudflare resources have been created or changed.
+Set the two Shopify environment variables described above before the live build. `wrangler.jsonc` records the project name and output directory. Use the existing Cloudflare account (`6059774b3388c84bc8a50de5f3e86bd4`); never commit Cloudflare credentials.
 
-Both the project-path and domain-root builds are checked in CI. The GitHub Pages publication setting and any future Cloudflare deployment are separate from this migration branch.
+To enable automatic builds later, repair the Cloudflare Pages GitHub installation and connect `Sylvgira/beaubnana`, production branch `main`, build command `npm run check && npm run build && npm test`, output `dist`, Node 24, `BASE_PATH=/`, `SITE_URL=https://beaubnana.pages.dev`, and the Shopify live-build variables. CI currently checks both hosting paths on PRs and main pushes; it does not publish.
+
+The old GitHub Pages deployment workflow has been removed. Repository-root redirect pages send the old project URL and deep links to Cloudflare, preserving query strings and fragments. They are not included in the Cloudflare artifact. A legacy project-path build is still available with `BASE_PATH=/beaubnana SITE_URL=https://sylvgira.github.io npm run build`.

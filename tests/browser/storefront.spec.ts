@@ -2,7 +2,7 @@ import {test,expect,type Page} from '@playwright/test';
 import fixtures from '../fixtures/storefront.json' with {type:'json'};
 import {readFileSync} from 'node:fs';
 const sdk=readFileSync(new URL('../fixtures/buy-sdk.js',import.meta.url),'utf8');
-const base=(process.env.BASE_PATH ?? '/beaubnana').replace(/\/$/,'');
+const base=(process.env.BASE_PATH ?? '/').replace(/\/$/,'');
 
 async function mockServices(page: Page, options: {offline?:boolean;sdkUnavailable?:boolean} = {}) {
   const unhandled: string[]=[];

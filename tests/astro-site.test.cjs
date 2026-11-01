@@ -7,8 +7,8 @@ const {load} = require('cheerio');
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
 const snapshot = require('../src/data/shopify-snapshot.json');
-const base = (process.env.BASE_PATH ?? '/beaubnana').replace(/\/$/,'');
-const site = 'https://sylvgira.github.io';
+const base = (process.env.BASE_PATH ?? '/').replace(/\/$/,'');
+const site = process.env.SITE_URL || 'https://beaubnana.pages.dev';
 
 function files(dir) {
   return fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry => entry.isDirectory() ? files(path.join(dir,entry.name)) : [path.join(dir,entry.name)]);

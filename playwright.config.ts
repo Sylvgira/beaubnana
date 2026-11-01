@@ -1,5 +1,5 @@
 import { defineConfig } from '@playwright/test';
-const base = (process.env.BASE_PATH ?? '/beaubnana').replace(/\/$/, '');
+const base = (process.env.BASE_PATH ?? '/').replace(/\/$/, '');
 
 export default defineConfig({
   testDir: './tests/browser',
