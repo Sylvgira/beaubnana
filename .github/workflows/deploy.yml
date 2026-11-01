@@ -16,15 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '24'
           
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
         if: hashFiles('package.json') != ''
         
       - name: Build Site
@@ -32,55 +32,15 @@ jobs:
         env:
           SHOPIFY_STORE_NAME: ${{ vars.SHOPIFY_STORE_NAME }}
           SHOPIFY_STOREFRONT_TOKEN: ${{ secrets.SHOPIFY_STOREFRONT_TOKEN }}
+          SHOPIFY_BUY_SDK_TOKEN: ${{ secrets.SHOPIFY_BUY_SDK_TOKEN }}
           SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
 
-      # This step filters out development files before deployment
-      # This allows dev files to exist in the repository but not on the live site
-      - name: Prepare for Deployment (Filter Development Files)
-        run: |
-          # Create a temporary directory for deployment files
-          mkdir -p ./deploy-temp
-          
-          # Copy everything to the temp directory first
-          cp -r ./* ./deploy-temp/ 2>/dev/null || true
-          cp .nojekyll ./deploy-temp/ 2>/dev/null || true
-          
-          # Remove development directories
-          rm -rf ./deploy-temp/styleguide/
-          rm -rf ./deploy-temp/ignore/
-          rm -rf ./deploy-temp/internal-pages/
-          rm -rf ./deploy-temp/scripts/
-          rm -rf ./deploy-temp/tools/
-          rm -rf ./deploy-temp/_drafts/
-          rm -rf ./deploy-temp/includes/
-          
-          # Remove template and development files by pattern
-          find ./deploy-temp -name "template.*" -type f -delete
-          find ./deploy-temp -name "styleguide.*" -type f -delete
-          find ./deploy-temp -name "*.template.*" -type f -delete
-          find ./deploy-temp -name "*.draft.*" -type f -delete
-          find ./deploy-temp -name "*.style-guide.*" -type f -delete
-          find ./deploy-temp -name "_*.html" -type f -delete
-          
-          # Remove development utility scripts
-          find ./deploy-temp -name "build-*.js" -type f -delete
-          find ./deploy-temp -name "dev-*.js" -type f -delete
-          find ./deploy-temp -name "generate-*.js" -type f -delete
-          find ./deploy-temp -name "update-*.js" -type f -delete
-          
-          # Remove specific development files
-          rm -f ./deploy-temp/server.js
-          rm -f ./deploy-temp/update-footers.js
-          
-          # Remove workflow and configuration files not needed on live site
-          rm -rf ./deploy-temp/.github/
-          rm -rf ./deploy-temp/.gitignore
-          rm -rf ./deploy-temp/TEMPLATE_CONVENTIONS.md
-          rm -f ./deploy-temp/.env
+      - name: Regression checks
+        run: npm test
           
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./deploy-temp
+          folder: ./dist
           branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }} 
+          token: ${{ secrets.GITHUB_TOKEN }}

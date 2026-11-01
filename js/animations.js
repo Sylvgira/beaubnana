@@ -1,11 +1,13 @@
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const introTexts = document.querySelectorAll('.intro-text_text');
 
   introTexts.forEach(textElement => {
     SplitText.create(textElement, {
-      type: "chars, words", // We only need to split by characters for this effect
+      type: "chars, words",
+      aria: "none", // We only need to split by characters for this effect
       // charsClass: "intro-char", // You can add a class to the characters if needed for styling
       onSplit(self) {
         // self.chars is an array of the individual character elements
@@ -28,4 +30,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-}); 
+});

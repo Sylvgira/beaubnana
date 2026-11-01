@@ -26,11 +26,11 @@ To set up for local development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/beaubnana.git
+git clone https://github.com/Sylvgira/beaubnana.git
 cd beaubnana
 
 # Install dependencies (if using npm)
-npm install
+npm ci
 
 # Copy the environment variables template
 cp .env.example .env
@@ -118,3 +118,18 @@ See `TEMPLATE_CONVENTIONS.md` for details on file naming patterns used to separa
 - Shopify's Buy Button SDK is loaded dynamically to reduce page load time
 - Custom JavaScript in `shopify.js` handles the Shopify integration
 - Includes system in `include.js` manages shared elements like headers and footers
+
+## Reliability and maintenance
+
+Use Node 24 or later. Shopify remains the product backend and checkout provider; the custom Webflow frontend and existing Shopify plan are retained.
+
+- Navigation uses relative static URLs; runtime product links resolve from the script location, including GitHub Pages project paths.
+- One cached Storefront catalogue supplies filtering, sorting and product types. Failed requests are retryable, and existing rendered content is preserved.
+- Product pages initialize Shopify Buy Buttons from their generated product ID. Purchase availability is shown by Shopify; initialization failures display a temporary-unavailability message.
+- The optional `SHOPIFY_BUY_SDK_TOKEN` repository secret overrides the public Storefront token for Buy Buttons. Never put an Admin token into browser config.
+- Without an Admin token, builds preserve existing policy pages. With one configured, policy fetch failures stop the build rather than publish sample text.
+- Shared navigation/footer regions are regenerated from `includes/` using explicit markers on every build.
+- `npm run build` validates credentials, generates content, and creates `dist/` from an explicit public-file allowlist. Only `dist/` is deployed. Ensure GitHub Pages publishes the `gh-pages` branch used by the workflow.
+- `npm run prepare:site` packages the checked-in pages without fetching Shopify content. `npm test` checks links, inline script syntax, request caching and failure handling against that artifact.
+
+The checked-in catalogue and homepage collection/category sections provide a browsing fallback during a temporary Storefront API outage. Images still use Shopify's CDN. The contact link uses the corrected brand spelling; mailbox delivery has not been verified.

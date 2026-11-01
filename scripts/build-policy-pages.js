@@ -52,6 +52,7 @@ function fetchFromShopifyAdmin(endpoint) {
             });
         });
         
+        req.setTimeout(15000, () => req.destroy(new Error('Shopify request timed out')));
         req.on('error', (error) => {
             reject(error);
         });
@@ -68,8 +69,7 @@ async function fetchPolicies() {
         const shopPolicies = await fetchFromShopifyAdmin('policies.json');
         
         if (!shopPolicies || !shopPolicies.policies) {
-            console.warn('No policies found in API response, using sample content instead.');
-            return getSamplePolicies();
+            throw new Error('Invalid policy response; existing policies were preserved.');
         }
         
         console.log(`Successfully fetched ${shopPolicies.policies.length} policies from Shopify`);
@@ -107,8 +107,7 @@ async function fetchPolicies() {
         return policies;
     } catch (error) {
         console.error('Error fetching policies from Shopify:', error);
-        console.log('Falling back to sample policies...');
-        return getSamplePolicies();
+        throw error;
     }
 }
 
@@ -255,8 +254,7 @@ async function buildPolicyPages() {
         const policies = await fetchPolicies();
         
         if (policies.length === 0) {
-            console.error('No policies found. Check your Shopify API credentials or ensure policies are set in your Shopify store.');
-            return;
+            throw new Error('No policies returned; refusing an incomplete build.');
         }
         
         console.log(`Found ${policies.length} policies`);
@@ -278,8 +276,10 @@ async function buildPolicyPages() {
         console.log('To view your policies: open your browser and navigate to policy files directly');
     } catch (error) {
         console.error('Build failed:', error);
+        process.exitCode = 1;
     }
 }
 
 // Run the build
-buildPolicyPages(); 
+if (SHOPIFY_CONFIG.adminApiAccessToken) buildPolicyPages();
+else console.log('No Admin token: preserving existing policy pages.');

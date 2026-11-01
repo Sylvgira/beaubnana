@@ -88,6 +88,7 @@ function fetchFromShopify(query) {
             });
         });
         
+        req.setTimeout(15000, () => req.destroy(new Error('Shopify request timed out')));
         req.on('error', (error) => {
             reject(error);
         });
@@ -104,7 +105,7 @@ async function fetchProducts() {
         return data.data.products.edges.map(edge => edge.node);
     } catch (error) {
         console.error('Error fetching products:', error);
-        return [];
+        throw error;
     }
 }
 
@@ -212,8 +213,7 @@ async function buildProductPages() {
         const products = await fetchProducts();
         
         if (products.length === 0) {
-            console.error('No products found. Check your Shopify API credentials.');
-            return;
+            throw new Error('No products returned; refusing an incomplete build.');
         }
         
         console.log(`Found ${products.length} products`);
@@ -236,6 +236,7 @@ async function buildProductPages() {
         console.log('To deploy: upload all files to your web server');
     } catch (error) {
         console.error('Build failed:', error);
+        process.exitCode = 1;
     }
 }
 
