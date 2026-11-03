@@ -1,7 +1,7 @@
 {
   "name": "beau-banana",
   "version": "1.0.0",
-  "description": "Beaubnana Astro storefront with Shopify",
+  "description": "Bibeau Astro storefront with Shopify",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

@@ -4,6 +4,6 @@ import HomeContent from '../components/HomeContent.astro';
 import { getShopData } from '../lib/shopify';
 const { products } = await getShopData();
 ---
-<SiteLayout title="Beaubnana | Handmade Crochet Accessories" page="home">
+<SiteLayout title="Bibeau | Handmade Crochet Accessories" page="home">
   <HomeContent products={products} />
 </SiteLayout>

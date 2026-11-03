@@ -1,4 +1,4 @@
-# Beaubnana
+# Bibeau
 
 An Astro 7 static storefront for handmade crochet accessories, with the original Webflow visual design and Shopify Storefront / Buy Button integration. Shopify remains the product and checkout backend; the migration does not require a different Shopify plan.
 
